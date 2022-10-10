@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Alert } from "react-native";
 
 import Colors from "../constants/colors";
 import PrimaryButton from "./PrimaryButton";
 import Card from "./Card";
 
-import { Entypo } from "@expo/vector-icons";
+import AudioPlayerButton from './AudioPlayerButton';
 
-function QuizItem({ wordPt, option1, option2, optionCorrect, onOptionCorrectSelected }) {
+function QuizItem({ wordPt, option1, option2, optionCorrect, onOptionCorrectSelected, audio }) {
 
   const [currentOption, setCurrentOption] = useState(); 
 
@@ -16,14 +16,15 @@ function QuizItem({ wordPt, option1, option2, optionCorrect, onOptionCorrectSele
       (currentOption === 1 && option1 === optionCorrect) ||
       (currentOption === 2 && option2 === optionCorrect)
     ){
-      //console.log('acertou')
       onOptionCorrectSelected();
     }
     else if (
       (currentOption === 1 && option1 != optionCorrect) ||
       (currentOption === 2 && option2 != optionCorrect)      
     ){
-      //console.log('errou')
+      Alert.alert("Resposta errada", "Tente novamente!", [
+        {text: "OK", style: "cancel"}
+      ]);      
     }
     setCurrentOption();
   }, [currentOption, onOptionCorrectSelected]);
@@ -46,9 +47,7 @@ function QuizItem({ wordPt, option1, option2, optionCorrect, onOptionCorrectSele
             <PrimaryButton word={option2} onPress={nextGuessHandler.bind('this', 2)} />
           </View>
         </View>
-        <View style={styles.iconContainer}>
-          <Entypo name="sound" size={32} color={Colors.primary600} />
-        </View>
+        <AudioPlayerButton audio={audio}/>
       </Card>
     </View>
   );
@@ -73,9 +72,5 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
-  },
-  iconContainer: {
-    marginTop: 10,
-    alignSelf: "flex-end",
-  },
+  }
 });

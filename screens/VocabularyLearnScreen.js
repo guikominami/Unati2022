@@ -53,6 +53,7 @@ function VocabularyLearnScreen(){
         option2={optionWord2}
         optionCorrect={selectedWord.optionCorrect}
         onOptionCorrectSelected={optionSelectedHandler}
+        audio={selectedWord.audio}
       />
     </View>
   );
