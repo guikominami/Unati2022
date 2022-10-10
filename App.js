@@ -1,36 +1,30 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View, ImageBackground } from "react-native";
+import { StyleSheet, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import AppLoading from "expo-app-loading";
+import { AppLoading } from "expo-app-loading";
 
 import PrimaryScreen from "./screens/PrimaryScreen";
 import VocabularyLearnScreen from "./screens/VocabularyLearnScreen";
 import VocabularyListScreen from "./screens/VocabularyListScreen";
 import PhrasesLearnScreen from "./screens/PhrasesLearnScreen";
 import PhrasesListScreen from "./screens/PhrasesListScreen";
-
 import Colors from "./constants/colors";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
-    "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
   });
-
-  //carregar a tela principal (splash screen) enquanto carrega as fontes
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
-
-  const Stack = createNativeStackNavigator();
 
   return (
     <>
-      <StatusBar style="light" />
+      <StatusBar style="light"/>
       <NavigationContainer style={styles.rootContainer}>       
         <Stack.Navigator
           screenOptions={{
@@ -48,6 +42,7 @@ export default function App() {
             name="VocabularyLearnScreen" 
             component={VocabularyLearnScreen} 
             options={{ title: 'Vocabulário' }}
+            params={{ wordId: 1 }}
           />
           <Stack.Screen 
             name="VocabularyListScreen" 
@@ -63,7 +58,7 @@ export default function App() {
             name="PhrasesListScreen" 
             component={PhrasesListScreen} 
             options={{ title: 'Lista de Frases' }}            
-          />                              
+          />         
         </Stack.Navigator>
       </NavigationContainer>
     </>

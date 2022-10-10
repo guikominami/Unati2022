@@ -2,9 +2,9 @@ import Category from "../models/category";
 import Vocabulary from "../models/vocabulary";
 
 export const CATEGORIES = [
-  new Category(1, "Vocabulário", "#f4ebdc", "VocabularyLearnScreen"),
+  new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen"),
   new Category(2, "Lista de Vocabulário", "#CF9B33", "VocabularyListScreen"),
-  new Category(3, "Frases", "#7E2E27", "PhrasesLearnScreen"),
+  new Category(3, "Desafio de Frases", "#7E2E27", "PhrasesLearnScreen"),
   new Category(4, "Lista de Frases", "#3A1C1D", "PhrasesListScreen"),
 ];
 
@@ -104,7 +104,7 @@ export const VOCABULARY = [
     "tokerehi,tókoe",
     "tokerehi",
     "tókoe",
-    "Angola(galinha)",
+    "Angola (galinha)",
     "tókoe",
     require("../assets/images/vocabulary/angola.jpg"),
     require("../assets/audios/vocabulary/angola.wav")
@@ -474,7 +474,7 @@ export const VOCABULARY = [
     "kopîe,kopíke",
     "kopîe",
     "kopíke",
-    "Carniceira(marimbondo)",
+    "Carniceira (marimbondo)",
     "kopíke",
     require("../assets/images/vocabulary/carniceira.jpg"),
     require("../assets/audios/vocabulary/carniceira.wav")
@@ -674,7 +674,7 @@ export const VOCABULARY = [
     "Hîyeu,hîyo",
     "Hîyeu",
     "hîyo",
-    "Correção(formiga)",
+    "Correção (formiga)",
     "hîyo",
     require("../assets/images/vocabulary/correicao.jpg"),
     require("../assets/audios/vocabulary/correicao.wav")
@@ -854,7 +854,7 @@ export const VOCABULARY = [
     "hêve,hîu",
     "hêve",
     "hîu",
-    "Flor(de árvores)",
+    "Flor (de árvores)",
     "hîu",
     require("../assets/images/vocabulary/flordearvore.jpg"),
     require("../assets/audios/vocabulary/flordearvore.wav")
@@ -864,7 +864,7 @@ export const VOCABULARY = [
     "Ítukemea,itunoevoti",
     "Ítukemea",
     "itunoevoti",
-    "Flores(de jardim)",
+    "Flores (de jardim)",
     "itunoevoti",
     require("../assets/images/vocabulary/floresdejardim.jpg"),
     require("../assets/audios/vocabulary/floresdejardim.wav")
@@ -1024,7 +1024,7 @@ export const VOCABULARY = [
     "Kínati,kipâhi",
     "Kínati",
     "kipâhi",
-    "Guardachuva",
+    "Guarda chuva",
     "kipâhi",
     require("../assets/images/vocabulary/guardachuva.jpg"),
     require("../assets/audios/vocabulary/guardachuva.wav")
@@ -1094,7 +1094,7 @@ export const VOCABULARY = [
     "Xûruno,xukûyo",
     "Xûruno",
     "xukûyo",
-    "Joãodebarro",
+    "João de barro",
     "xukûyo",
     require("../assets/images/vocabulary/joaodebarro.jpg"),
     require("../assets/audios/vocabulary/joaodebarro.wav")
@@ -1924,7 +1924,7 @@ export const VOCABULARY = [
     "Hepíko,hepîpi",
     "Hepíko",
     "hepîpi",
-    "Tucanguira(formiga)",
+    "Tucanguira (formiga)",
     "hepîpi",
     require("../assets/images/vocabulary/tocandira.jpg"),
     require("../assets/audios/vocabulary/tocandira.wav")

@@ -7,14 +7,27 @@ import QuizItem from '../components/QuizItem';
 import Colors from '../constants/colors';
 import Title from '../components/Title';
 
-function VocabularyLearnScreen(){
+function VocabularyLearnScreen({ route }){
 
-  //adivinhação inicial será 1
-  const initialWord = 1;
+  var initialWordId = 0;
+
+  if (route.params !== undefined){
+    initialWordId = route.params.wordId;
+  }
+  else{
+    initialWordId = generateWordId();
+  }
+
+  function generateWordId(){
+    //sorteia a próxima pergunta entre os dados
+    const rndWordId = Math.floor(Math.random() * (VOCABULARY.length - 1) + 1);
+    //console.log(rndWordId);
+    return rndWordId;
+  }
 
   //setar a adivinhação corrente com a adivinhação inicial
   //toda vez que se dá um set, é renderizado novamente o componente  
-  const [currentWordId, setCurrentWord] = useState(initialWord); 
+  const [currentWordId, setCurrentWord] = useState(initialWordId); 
 
   const selectedWord = VOCABULARY.find((word) => word.id === currentWordId);  
 
@@ -22,9 +35,10 @@ function VocabularyLearnScreen(){
   var optionWord2 = selectedWord.option2;
 
   function optionSelectedHandler(){
-    //passa para a próxima pergunta
-    setCurrentWord(currentWordId + 1);
-    //console.log('Correct');
+
+    setCurrentWord(generateWordId());
+    //passa para a próxima pergunta (SE ACHAR MELHOR IR SEQUENCIAL)
+    //setCurrentWord(currentWordId + 1);
   }
 
   generateRandom();  

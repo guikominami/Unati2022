@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     color: Colors.primary800,
     textAlign: 'center',
     fontSize: 24,
-    fontFamily: 'open-sans',        
+    fontFamily: 'open-sans',
+    elevation: 4    
   }
 });

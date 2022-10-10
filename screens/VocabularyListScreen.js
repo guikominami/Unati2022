@@ -1,29 +1,42 @@
-import { View, FlatList } from 'react-native';
+import { View, FlatList, StyleSheet } from 'react-native';
 
 import { VOCABULARY } from '../data/data';
 
-import QuizItem from '../components/QuizItem';
+import VocabularyListItem from '../components/VocabularyListItem';
 
-function VocabularyListScreen(){
+function VocabularyListScreen({ navigation }){
+  function renderCategoryItem(itemData){
+    function pressHandler(){
+      navigation.navigate('VocabularyLearnScreen', {
+        wordId: itemData.item.id,
+        size: itemData.length
+      });
+    }
+
+    return (
+      <VocabularyListItem 
+        word={itemData.item.optionPt} 
+        onPress={pressHandler}
+      />
+    );
+  }
 
   return (
-    <View>
+    <View style={styles.listContainer}>
       <FlatList 
         data={VOCABULARY} 
-        renderItem={(itemData) => {
-          return(
-            <QuizItem 
-              word={itemData.item.optionPt} 
-              image={itemData.item.image}
-            />
-          )
-        }}        
-        keyExtractor={(item, index) => {
-          return item.id;
-        }} 
+        keyExtractor={(item, index) => item.id}
+        renderItem={renderCategoryItem}        
+        numColumns={2}
       />
     </View>    
   );
 }
 
 export default VocabularyListScreen;
+
+const styles = StyleSheet.create({
+  listContainer: {
+    marginTop: 4,  
+  }
+})

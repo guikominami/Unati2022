@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
     elevation: 4,
     overflow: 'hidden',
     borderWidth: 6,
-    borderColor: Colors.primary800    
+    borderColor: Colors.primary800,
   },
   button: {
-    flex: 1
+    flex: 1,
   },
   innerContainer: {
     flex: 1,
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    fontFamily: 'open-sans-bold',
+    //fontFamily: 'open-sans-bold',
+    fontWeight: 'bold'
   }
 });
