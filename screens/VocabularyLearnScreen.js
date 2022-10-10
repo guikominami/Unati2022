@@ -13,22 +13,30 @@ function VocabularyLearnScreen(){
   const initialWord = 1;
 
   //setar a adivinhação corrente com a adivinhação inicial
-  const [currentWord, setCurrentWord] = useState(initialWord); 
+  //toda vez que se dá um set, é renderizado novamente o componente  
+  const [currentWordId, setCurrentWord] = useState(initialWord); 
 
-  const [currentOption, setCurrentOption] = useState();
+  const selectedWord = VOCABULARY.find((word) => word.id === currentWordId);  
 
-  const [optionSelected, setOptionSelected] = useState(0);
+  var optionWord1 = selectedWord.option1;
+  var optionWord2 = selectedWord.option2;
 
-  function optionSelectedHandler(option){
-    console.log(option);
+  function optionSelectedHandler(){
+    //passa para a próxima pergunta
+    setCurrentWord(currentWordId + 1);
+    //console.log('Correct');
   }
-/*   useEffect(() => {
-    if (onNextGuess > 0){
-      console.log(onNextGuess);
-    }
-  }, [onNextGuess]);  */ 
 
-  const selectedWord = VOCABULARY.find((word) => word.id === currentWord);
+  generateRandom();  
+
+  function generateRandom() {
+    const rndNum = Math.floor(Math.random() * (3 - 1) + 1);
+    
+    if (rndNum === 2){
+      optionWord1 = selectedWord.option2;
+      optionWord2 = selectedWord.option1;
+    }
+  }  
 
   return (
     <View style={styles.rootContainer}>
@@ -41,10 +49,10 @@ function VocabularyLearnScreen(){
       </View>
       <QuizItem
         wordPt={selectedWord.optionPt}
-        option1={selectedWord.option1}
-        option2={selectedWord.option2}
-        onOption1Selected={optionSelectedHandler.bind("this", 1)}
-        onOption2Selected={optionSelectedHandler.bind("this", 2)}
+        option1={optionWord1}
+        option2={optionWord2}
+        optionCorrect={selectedWord.optionCorrect}
+        onOptionCorrectSelected={optionSelectedHandler}
       />
     </View>
   );

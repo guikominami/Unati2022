@@ -7,19 +7,26 @@ import Card from "./Card";
 
 import { Entypo } from "@expo/vector-icons";
 
-function QuizItem({ wordPt, option1, option2, onOption1Selected, onOption2Selected }) {
+function QuizItem({ wordPt, option1, option2, optionCorrect, onOptionCorrectSelected }) {
 
   const [currentOption, setCurrentOption] = useState(); 
 
   useEffect(() => {
-    if (currentOption === 1){
-      onOption1Selected();
+    if (
+      (currentOption === 1 && option1 === optionCorrect) ||
+      (currentOption === 2 && option2 === optionCorrect)
+    ){
+      //console.log('acertou')
+      onOptionCorrectSelected();
     }
-    else if (currentOption === 2){
-      onOption2Selected();
+    else if (
+      (currentOption === 1 && option1 != optionCorrect) ||
+      (currentOption === 2 && option2 != optionCorrect)      
+    ){
+      //console.log('errou')
     }
     setCurrentOption();
-  }, [currentOption, onOption1Selected, onOption2Selected]);
+  }, [currentOption, onOptionCorrectSelected]);
 
   function nextGuessHandler(optionSelected){
     setCurrentOption(optionSelected);
