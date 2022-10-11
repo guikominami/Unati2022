@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     //fontFamily: 'open-sans-bold',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center'
   }
 });

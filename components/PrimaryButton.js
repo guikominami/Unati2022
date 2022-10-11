@@ -9,7 +9,12 @@ function PrimaryButton({ word, onPress }){
         style={styles.buttonInnerContainer} 
         onPress={onPress} 
         android_ripple={{ color: Colors.primary600 }}>      
-        <Text style={styles.buttonText} adjustsFontSizeToFit numberOfLines={1}>{word}</Text>
+        <Text 
+          style={styles.buttonText} 
+          adjustsFontSizeToFit numberOfLines={1}
+        >
+          {word}
+        </Text>
       </Pressable>
     </View>
   );
