@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Entypo } from "@expo/vector-icons";
-import Colors from '../constants/colors';
+import Colors from '../../constants/colors';
 import { Audio } from 'expo-av';
 
 function AudioPlayerButton({ audio }){

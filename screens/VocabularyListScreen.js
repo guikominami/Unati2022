@@ -2,7 +2,7 @@ import { View, FlatList, StyleSheet, SafeAreaView } from "react-native";
 
 import { VOCABULARY } from "../data/data";
 
-import VocabularyListItem from "../components/VocabularyListItem";
+import VocabularyListItem from "../components/App/VocabularyListItem";
 
 import Colors from "../constants/colors";
 
@@ -11,7 +11,7 @@ function VocabularyListScreen({ navigation }) {
     function pressHandler() {
       navigation.navigate("VocabularyLearnScreen", {
         wordId: itemData.item.id,
-        size: itemData.length,
+        type: 'word',
       });
     }
 

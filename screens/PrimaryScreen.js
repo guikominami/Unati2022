@@ -2,12 +2,15 @@ import { FlatList, StyleSheet, View, ImageBackground } from 'react-native';
 
 import { CATEGORIES } from '../data/data';
 
-import CategoryGridTile from '../components/CategoryGridTile';
+import CategoryGridTile from '../components/UI/CategoryGridTile';
 
 function PrimaryScreen({ navigation }){
   function renderCategoryItem(itemData){    
     function pressHandler(){
-      navigation.navigate(itemData.item.page);
+      navigation.navigate(itemData.item.page, {
+          wordId: '', 
+          type: 'word'
+      });
     }
     
     return (

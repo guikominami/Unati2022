@@ -1,8 +1,8 @@
 import { Pressable, View, Text, StyleSheet } from 'react-native';
 
-import Colors from '../constants/colors';
+import Colors from '../../constants/colors';
 
-function PrimaryButton({ word, onPress }){
+function PhraseButton({ word, onPress }){
   return(
     <View style={styles.buttonOuterContainer}>    
       <Pressable 
@@ -20,16 +20,15 @@ function PrimaryButton({ word, onPress }){
   );
 }
 
-export default PrimaryButton;
+export default PhraseButton;
 
 const styles = StyleSheet.create({
   buttonOuterContainer: {
     borderRadius: 28,
     margin: 4,
     overflow: 'hidden',
-    width: 130,
     height: 50,
-    alignSelf: 'center',
+    alignSelf: 'flex-start',
   },
   buttonInnerContainer: {
     backgroundColor: Colors.primary600,

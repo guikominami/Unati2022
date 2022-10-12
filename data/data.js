@@ -1,5 +1,6 @@
 import Category from "../models/category";
 import Vocabulary from "../models/vocabulary";
+import Phrase from "../models/phrases";
 
 export const CATEGORIES = [
   new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen"),
@@ -2018,5 +2019,80 @@ export const VOCABULARY = [
     "yékoteno",
     require("../assets/images/vocabulary/velho.jpg"),
     require("../assets/audios/vocabulary/velho.wav")
+  ),
+];
+
+export const PHRASES = [
+  new Phrase(
+    1,
+    "O vestido da moça é bonito",
+    "Váhere hîxo ne ârunoe",
+    "Uhé’ekoti hîxo ne ârunoe",
+    "vestido",
+    "Uhé’ekoti hîxo ne ârunoe",
+    require('../assets/audios/phrases/vestido.wav')
+  ),
+  new Phrase(
+    2,
+    "A flor é cheirosa",
+    "háheti ne itunoevoti",
+    "Úheti ihópune ne itunoevoti",
+    "flor",
+    "Úheti ihópune ne itunoevoti",
+    require('../assets/audios/phrases/flor.wav')
+  ),
+  new Phrase(
+    3,
+    "A mulher indígena é linda",
+    "Uhé’ekoti ne kopenoti",
+    "Exóketi seno ne kopénoti",
+    "mulher_indigena",
+    "Exóketi seno ne kopénoti",
+    require('../assets/audios/phrases/mulher_indigena.wav')
+  ),
+  new Phrase(
+    4,
+    "Aqui tem caju vermelha e amarela",
+    "úheti ne kâxu",
+    "Apé yaye hararáiti yoko hiyáiti kâxu",
+    "caju",
+    "Apé yaye hararáiti yoko hiyáiti kâxu",
+    require('../assets/audios/phrases/caju.wav')
+  ),
+  new Phrase(
+    5,
+    "O doce de abóbora é uma delícia",
+    "Tíuiti ne kâme",
+    "Úheti ndúsena kâme",
+    "abobora",
+    "Úheti ndúsena kâme",
+    require('../assets/audios/phrases/abobora.wav')
+  ),
+  new Phrase(
+    6,
+    "O macaco quer comer banana",
+    "Eno pânana yaye",
+    "Kahá’ati níkea pânana ne kâi",
+    "banana",
+    "Kahá’ati níkea pânana ne kâi",
+    require('../assets/audios/phrases/banana.wav')
+  ),
+  new Phrase(
+    7,
+    "O papagaio é conversador",
+    "Ixépati ne ko’êru",
+    "Éxetinati ne ko’êru",
+    "papagaio",
+    "Éxetinati ne ko’êru",
+    require('../assets/audios/phrases/papagaio.wav')
+  ),
+  new Phrase(
+    8,
+    "Os pés da perereca são gelados",
+    "Upôriti ne verékeke",
+    "Kásati hêve ne verékeke",
+    "perereca",
+    "Kásati hêve ne verékeke",
+    require('../assets/audios/phrases/perereca.wav')
   ),
 ];

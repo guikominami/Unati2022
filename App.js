@@ -42,7 +42,6 @@ export default function App() {
             name="VocabularyLearnScreen" 
             component={VocabularyLearnScreen} 
             options={{ title: 'Vocabulário' }}
-            params={{ wordId: 1 }}
           />
           <Stack.Screen 
             name="VocabularyListScreen" 
