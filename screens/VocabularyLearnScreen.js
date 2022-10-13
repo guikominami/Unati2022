@@ -2,12 +2,12 @@ import { useState } from "react";
 import { View, StyleSheet } from "react-native";
 
 import { VOCABULARY } from "../data/data";
+import { PHRASES } from "../data/data";
 
 import QuizItem from "../components/App/QuizItem";
 
 function VocabularyLearnScreen({ route }) {
   var initialWordId = 0;
-  var type = route.params.type;
 
   if (route.params.wordId !== "") {
     initialWordId = route.params.wordId;
@@ -20,7 +20,7 @@ function VocabularyLearnScreen({ route }) {
     const rndWordId = Math.floor(Math.random() * (VOCABULARY.length - 1) + 1);
     //console.log(rndWordId);
     return rndWordId;
-  }
+  }  
 
   //setar a adivinhação corrente com a adivinhação inicial
   //toda vez que se dá um set, é renderizado novamente o componente

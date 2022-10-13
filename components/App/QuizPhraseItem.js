@@ -18,7 +18,7 @@ function QuizPhraseItem({
 }) {
   const [currentOption, setCurrentOption] = useState();
 
-  useEffect(() => {
+   useEffect(() => {
     if (
       (currentOption === 1 && option1 === optionCorrect) ||
       (currentOption === 2 && option2 === optionCorrect)
@@ -30,7 +30,7 @@ function QuizPhraseItem({
       ]);
     } 
     setCurrentOption();
-  }, [currentOption, onOptionCorrectSelected]);
+  }, [currentOption, onOptionCorrectSelected]); 
 
   function nextGuessHandler(optionSelected) {
     setCurrentOption(optionSelected);
@@ -43,12 +43,12 @@ function QuizPhraseItem({
         <View style={styles.titleContainer}>
           <Text style={styles.title}>{phrase}</Text>
         </View>
-        <View>
+        <View style={styles.buttonsContainer}>
           <View>
             <PhraseButton
               word={option1}
               onPress={nextGuessHandler.bind("this", 1)}
-            />
+            />          
           </View>
           <View>
             <PhraseButton
@@ -72,16 +72,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   titleContainer:{
-    backgroundColor: 'white',
-    paddingHorizontal: 20,
-    justifyContent: 'flex-start'
+    paddingHorizontal: 5,
+    alignSelf: 'center',
+  },
+  buttonsContainer:{
+    flexDirection: "column",
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     color: Colors.primary600,
     fontFamily: "open-sans-bold",
-    marginBottom: 10,
-    backgroundColor: 'yellow',
-    
+    marginBottom: 20,
   },
 });

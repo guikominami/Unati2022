@@ -3,10 +3,10 @@ import Vocabulary from "../models/vocabulary";
 import Phrase from "../models/phrases";
 
 export const CATEGORIES = [
-  new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen"),
-  new Category(2, "Lista de Vocabulário", "#CF9B33", "VocabularyListScreen"),
-  new Category(3, "Desafio de Frases", "#7E2E27", "PhrasesLearnScreen"),
-  new Category(4, "Lista de Frases", "#3A1C1D", "PhrasesListScreen"),
+  new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen", "Vocabulary"),
+  new Category(2, "Lista de Vocabulário", "#CF9B33", "VocabularyListScreen", "Vocabulary"),
+  new Category(3, "Desafio de Frases", "#7E2E27", "PhrasesLearnScreen", "Phrase"),
+  new Category(4, "Lista de Frases", "#3A1C1D", "PhrasesListScreen", "Phrase"),
 ];
 
 export const VOCABULARY = [

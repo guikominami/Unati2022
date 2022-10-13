@@ -7,9 +7,6 @@ import QuizPhraseItem from "../components/App/QuizPhraseItem";
 
 function PhrasesLearnScreen({ route }) {
   var initialWordId = 0;
-  var type = route.params.type;
-
-  console.log(type);
 
   if (route.params.wordId !== "") {
     initialWordId = route.params.wordId;
