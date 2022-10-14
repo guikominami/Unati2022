@@ -10,8 +10,6 @@ import { AppLoading } from "expo-app-loading";
 import PrimaryScreen from "./screens/PrimaryScreen";
 import VocabularyLearnScreen from "./screens/VocabularyLearnScreen";
 import VocabularyListScreen from "./screens/VocabularyListScreen";
-import PhrasesLearnScreen from "./screens/PhrasesLearnScreen";
-import PhrasesListScreen from "./screens/PhrasesListScreen";
 import Colors from "./constants/colors";
 
 const Stack = createNativeStackNavigator();
@@ -47,17 +45,7 @@ export default function App() {
             name="VocabularyListScreen" 
             component={VocabularyListScreen} 
             options={{ title: 'Lista de Vocabulário' }}
-          />
-          <Stack.Screen 
-            name="PhrasesLearnScreen" 
-            component={PhrasesLearnScreen} 
-            options={{ title: 'Frases' }}
-          />
-          <Stack.Screen 
-            name="PhrasesListScreen" 
-            component={PhrasesListScreen} 
-            options={{ title: 'Lista de Frases' }}            
-          />         
+          />        
         </Stack.Navigator>
       </NavigationContainer>
     </>

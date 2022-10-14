@@ -5,8 +5,8 @@ import Phrase from "../models/phrases";
 export const CATEGORIES = [
   new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen", "Vocabulary"),
   new Category(2, "Lista de Vocabulário", "#CF9B33", "VocabularyListScreen", "Vocabulary"),
-  new Category(3, "Desafio de Frases", "#7E2E27", "PhrasesLearnScreen", "Phrase"),
-  new Category(4, "Lista de Frases", "#3A1C1D", "PhrasesListScreen", "Phrase"),
+  new Category(3, "Desafio de Frases", "#7E2E27", "VocabularyLearnScreen", "Phrase"),
+  new Category(4, "Lista de Frases", "#3A1C1D", "VocabularyListScreen", "Phrase"),
 ];
 
 export const VOCABULARY = [
@@ -2028,7 +2028,7 @@ export const PHRASES = [
     "O vestido da moça é bonito",
     "Váhere hîxo ne ârunoe",
     "Uhé’ekoti hîxo ne ârunoe",
-    "vestido",
+    "Vestido",
     "Uhé’ekoti hîxo ne ârunoe",
     require('../assets/audios/phrases/vestido.wav')
   ),
@@ -2037,7 +2037,7 @@ export const PHRASES = [
     "A flor é cheirosa",
     "háheti ne itunoevoti",
     "Úheti ihópune ne itunoevoti",
-    "flor",
+    "Flor",
     "Úheti ihópune ne itunoevoti",
     require('../assets/audios/phrases/flor.wav')
   ),
@@ -2046,7 +2046,7 @@ export const PHRASES = [
     "A mulher indígena é linda",
     "Uhé’ekoti ne kopenoti",
     "Exóketi seno ne kopénoti",
-    "mulher_indigena",
+    "Mulher indígena",
     "Exóketi seno ne kopénoti",
     require('../assets/audios/phrases/mulher_indigena.wav')
   ),
@@ -2055,7 +2055,7 @@ export const PHRASES = [
     "Aqui tem caju vermelha e amarela",
     "úheti ne kâxu",
     "Apé yaye hararáiti yoko hiyáiti kâxu",
-    "caju",
+    "Caju",
     "Apé yaye hararáiti yoko hiyáiti kâxu",
     require('../assets/audios/phrases/caju.wav')
   ),
@@ -2064,7 +2064,7 @@ export const PHRASES = [
     "O doce de abóbora é uma delícia",
     "Tíuiti ne kâme",
     "Úheti ndúsena kâme",
-    "abobora",
+    "Doce de abóbora",
     "Úheti ndúsena kâme",
     require('../assets/audios/phrases/abobora.wav')
   ),
@@ -2073,7 +2073,7 @@ export const PHRASES = [
     "O macaco quer comer banana",
     "Eno pânana yaye",
     "Kahá’ati níkea pânana ne kâi",
-    "banana",
+    "Banana",
     "Kahá’ati níkea pânana ne kâi",
     require('../assets/audios/phrases/banana.wav')
   ),
@@ -2082,7 +2082,7 @@ export const PHRASES = [
     "O papagaio é conversador",
     "Ixépati ne ko’êru",
     "Éxetinati ne ko’êru",
-    "papagaio",
+    "Papagaio",
     "Éxetinati ne ko’êru",
     require('../assets/audios/phrases/papagaio.wav')
   ),
@@ -2091,7 +2091,7 @@ export const PHRASES = [
     "Os pés da perereca são gelados",
     "Upôriti ne verékeke",
     "Kásati hêve ne verékeke",
-    "perereca",
+    "Perereca",
     "Kásati hêve ne verékeke",
     require('../assets/audios/phrases/perereca.wav')
   ),

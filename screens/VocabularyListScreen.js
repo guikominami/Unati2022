@@ -1,17 +1,25 @@
 import { View, FlatList, StyleSheet, SafeAreaView } from "react-native";
 
-import { VOCABULARY } from "../data/data";
-
 import VocabularyListItem from "../components/App/VocabularyListItem";
 
-import Colors from "../constants/colors";
+import { VOCABULARY } from "../data/data";
+import { PHRASES } from "../data/data";
 
-function VocabularyListScreen({ navigation }) {
+function VocabularyListScreen({ navigation, route }) {
+
+  var database;
+  if (route.params.dataType === "Vocabulary"){
+    database = VOCABULARY;  
+  }
+  else{
+    database = PHRASES;  
+  }
+
   function renderCategoryItem(itemData) {
     function pressHandler() {
       navigation.navigate("VocabularyLearnScreen", {
         wordId: itemData.item.id,
-        type: 'word',
+        dataType: route.params.dataType
       });
     }
 
@@ -27,7 +35,7 @@ function VocabularyListScreen({ navigation }) {
     <SafeAreaView style={{flex: 1}}>
       <View style={styles.listContainer}>
         <FlatList
-          data={VOCABULARY}
+          data={database}
           keyExtractor={(item, index) => item.id}
           renderItem={renderCategoryItem}
           numColumns={2}

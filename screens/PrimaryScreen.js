@@ -7,10 +7,9 @@ import CategoryGridTile from '../components/UI/CategoryGridTile';
 function PrimaryScreen({ navigation }){
   function renderCategoryItem(itemData){    
     function pressHandler(){
-      console.log(itemData.item.data);
       navigation.navigate(itemData.item.page, {
-          wordId: '', 
-          type: itemData.item.type
+        wordId: '', 
+        dataType: itemData.item.type
       });
     }
     

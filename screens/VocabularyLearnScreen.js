@@ -1,13 +1,25 @@
 import { useState } from "react";
 import { View, StyleSheet } from "react-native";
 
+import QuizItem from "../components/App/QuizItem";
+import QuizPhraseItem from "../components/App/QuizPhraseItem";
+
 import { VOCABULARY } from "../data/data";
 import { PHRASES } from "../data/data";
 
-import QuizItem from "../components/App/QuizItem";
-
 function VocabularyLearnScreen({ route }) {
   var initialWordId = 0;
+
+  var data;
+
+  //console.log(route.params.dataType);
+
+  if(route.params.dataType === "Vocabulary"){
+    data = VOCABULARY;
+  }
+  else{
+    data = PHRASES;
+  }
 
   if (route.params.wordId !== "") {
     initialWordId = route.params.wordId;
@@ -17,7 +29,7 @@ function VocabularyLearnScreen({ route }) {
 
   function generateWordId() {
     //sorteia a próxima pergunta entre os dados
-    const rndWordId = Math.floor(Math.random() * (VOCABULARY.length - 1) + 1);
+    const rndWordId = Math.floor(Math.random() * (data.length - 1) + 1);
     //console.log(rndWordId);
     return rndWordId;
   }  
@@ -26,7 +38,7 @@ function VocabularyLearnScreen({ route }) {
   //toda vez que se dá um set, é renderizado novamente o componente
   const [currentWordId, setCurrentWord] = useState(initialWordId);
 
-  const selectedWord = VOCABULARY.find((word) => word.id === currentWordId);
+  const selectedWord = data.find((word) => word.id === currentWordId);
 
   var optionWord1 = selectedWord.option1;
   var optionWord2 = selectedWord.option2;
@@ -48,19 +60,37 @@ function VocabularyLearnScreen({ route }) {
     }
   }
 
-  return (
-    <View style={styles.rootContainer}>
-      <QuizItem
-        wordPt={selectedWord.optionPt}
-        option1={optionWord1}
-        option2={optionWord2}
-        optionCorrect={selectedWord.optionCorrect}
-        onOptionCorrectSelected={optionSelectedHandler}
-        audio={selectedWord.audio}
-        image={selectedWord.image}
-      />
-    </View>
-  );
+  if(route.params.dataType === "Vocabulary"){
+    return (
+      <View style={styles.rootContainer}>
+        <QuizItem
+          wordPt={selectedWord.optionPt}
+          option1={optionWord1}
+          option2={optionWord2}
+          optionCorrect={selectedWord.optionCorrect}
+          onOptionCorrectSelected={optionSelectedHandler}
+          audio={selectedWord.audio}
+          image={selectedWord.image}
+        />
+      </View>
+    );
+  }
+  else{
+    return (
+      <View style={styles.rootContainer}>
+        <QuizPhraseItem
+          phrase={selectedWord.phrase}
+          option1={optionWord1}
+          option2={optionWord2}
+          optionCorrect={selectedWord.optionCorrect}
+          onOptionCorrectSelected={optionSelectedHandler}
+          audio={selectedWord.audio}
+        />
+      </View>
+    );
+  }
+
+
 }
 
 export default VocabularyLearnScreen;
