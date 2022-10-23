@@ -35,7 +35,13 @@ function AudioPlayerButton({ audio }){
 
   return(
     <View style={styles.iconContainer}>
-      <Entypo name="sound" size={32} color={Colors.primary600} onPress={playSound} />
+      <Entypo 
+        android_ripple={{color: '#cccccc'}}                    
+        name="sound" 
+        size={32} 
+        color={Colors.primary600}
+        onPress={playSound} 
+      />
     </View>    
   );
 }

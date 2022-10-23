@@ -7,8 +7,8 @@ function PrimaryButton({ word, onPress }){
     <View style={styles.buttonOuterContainer}>    
       <Pressable 
         style={styles.buttonInnerContainer} 
-        onPress={onPress} 
-        android_ripple={{ color: Colors.primary600 }}>      
+        android_ripple={{color: '#cccccc'}}        
+        onPress={onPress}>
         <Text 
           style={styles.buttonText} 
           adjustsFontSizeToFit numberOfLines={1}
@@ -38,13 +38,12 @@ const styles = StyleSheet.create({
     elevation: 6,
     width: "100%",
     height: "100%",
-    justifyContent: 'center'    
+    justifyContent: 'center',
   },
   buttonText: {
     color: Colors.primary800,
     textAlign: 'center',
     fontSize: 24,
     fontFamily: 'open-sans',
-    elevation: 4    
   }
 });
