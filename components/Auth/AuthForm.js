@@ -43,7 +43,7 @@ function AuthForm({ onSubmit, credentialsInvalid }) {
         />
         <Input
           label="Senha"
-          onUpdateValue={updateInputValueHandler.bind(this, 'senha')}
+          onUpdateValue={updateInputValueHandler.bind(this, 'password')}
           secure
           value={enteredPassword}
           isInvalid={passwordIsInvalid}

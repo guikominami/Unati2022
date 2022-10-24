@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "Unati2022",
-    "slug": "Unati2022",
+    "name": "Unati",
+    "slug": "Unati",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "backgroundColor": "#24180f",        
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,13 +21,20 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.guikominami.unati"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "60d08ffd-98b5-4b84-9981-07f30d3cf309"
+      }
     }
   }
 }
