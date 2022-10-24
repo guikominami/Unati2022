@@ -35,22 +35,22 @@ function AuthForm({ onSubmit, credentialsInvalid }) {
     <View style={styles.form}>
       <View>
         <Input
-          label="Email Address"
+          label="Email"
           onUpdateValue={updateInputValueHandler.bind(this, 'email')}
           value={enteredEmail}
           keyboardType="email-address"
           isInvalid={emailIsInvalid}
         />
         <Input
-          label="Password"
-          onUpdateValue={updateInputValueHandler.bind(this, 'password')}
+          label="Senha"
+          onUpdateValue={updateInputValueHandler.bind(this, 'senha')}
           secure
           value={enteredPassword}
           isInvalid={passwordIsInvalid}
         />
         <View style={styles.buttons}>
           <Button onPress={submitHandler}>
-            {'Log In'}
+            {'Conectar'}
           </Button>
         </View>
       </View>

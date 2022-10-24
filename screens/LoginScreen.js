@@ -26,7 +26,7 @@ function LoginScreen() {
   }
 
   if (isAuthenticating){
-    return <LoadingOverlay message="Logging user..."/>
+    return <LoadingOverlay message="Entrando no aplicativo..."/>
   }  
 
   return <AuthContent onAuthenticate={loginHandler}/>;

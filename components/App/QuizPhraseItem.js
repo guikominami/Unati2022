@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
 import { Alert } from "react-native";
 
 import Title from "../UI/Title";
@@ -65,11 +65,13 @@ function QuizPhraseItem({
 
 export default QuizPhraseItem;
 
+const deviceWidth = Dimensions.get('window').width;
+
 const styles = StyleSheet.create({
   rootContainer: {
     flex: 1,
     flexDirection: 'column',
-    marginTop: 20,
+    marginTop: deviceWidth < 380 ? 10 : 20,
   },
   titleContainer:{
     paddingHorizontal: 5,

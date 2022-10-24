@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Dimensions } from "react-native";
 
 import QuizItem from "../components/App/QuizItem";
 import QuizPhraseItem from "../components/App/QuizPhraseItem";
@@ -95,10 +95,12 @@ function VocabularyLearnScreen({ route }) {
 
 export default VocabularyLearnScreen;
 
+const deviceWidth = Dimensions.get('window').width;
+
 const styles = StyleSheet.create({
   rootContainer: {
     flex: 1,
     padding: 4,
-    marginTop: 20,
+    marginTop: deviceWidth < 380 ? 10 : 20,
   },
 });

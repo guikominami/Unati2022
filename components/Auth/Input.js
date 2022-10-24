@@ -12,11 +12,11 @@ function Input({
 }) {
   return (
     <View style={styles.inputContainer}>
-      <Text style={[styles.label, isInvalid && styles.labelInvalid]}>
+      <Text style={styles.label}>
         {label}
       </Text>
       <TextInput
-        style={[styles.input, isInvalid && styles.inputInvalid]}
+        style={styles.input}
         autoCapitalize={false}
         keyboardType={keyboardType}
         secureTextEntry={secure}
