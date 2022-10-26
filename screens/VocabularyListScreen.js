@@ -50,6 +50,6 @@ export default VocabularyListScreen;
 
 const styles = StyleSheet.create({
   listContainer: {
-    marginTop: 4,
+    marginTop: 14,
   },
 });

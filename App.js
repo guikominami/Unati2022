@@ -44,7 +44,7 @@ function AuthenticatedStack() {
       screenOptions={{
         headerStyle: { backgroundColor: Colors.primary800 },
         headerTintColor: "white",
-        contentStyle: { backgroundColor: Colors.primary700 },
+        contentStyle: { backgroundColor: 'transparent', },
       }}
     >
       <Stack.Screen
@@ -79,10 +79,17 @@ function Navigation() {
   const authCtx = useContext(AuthContext);
 
   return (
-      <NavigationContainer>
-        {!authCtx.isAuthenticated && <AuthStack />}
-        {authCtx.isAuthenticated && <AuthenticatedStack />}
-      </NavigationContainer>
+      <ImageBackground 
+        source={require('./assets/images/background.jpg')} 
+        resizeMode="cover"
+        style={styles.rootScreen}
+        imageStyle={styles.backgroundImage}
+      >                
+        <NavigationContainer>
+          {!authCtx.isAuthenticated && <AuthStack />}
+          {authCtx.isAuthenticated && <AuthenticatedStack />}
+        </NavigationContainer>
+      </ImageBackground >              
   );
 }
 
@@ -131,8 +138,10 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
+    backgroundColor: Colors.primary700
   },
   backgroundImage: {
-    opacity: 0.15,
+    marginTop: 80,    
+    opacity: 0.25,
   },
 });

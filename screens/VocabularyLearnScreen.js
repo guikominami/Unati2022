@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, StyleSheet, Dimensions } from "react-native";
+import { View, ImageBackground, StyleSheet, Dimensions } from "react-native";
 
 import QuizItem from "../components/App/QuizItem";
 import QuizPhraseItem from "../components/App/QuizPhraseItem";
@@ -89,8 +89,6 @@ function VocabularyLearnScreen({ route }) {
       </View>
     );
   }
-
-
 }
 
 export default VocabularyLearnScreen;
