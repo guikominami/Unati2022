@@ -8,7 +8,9 @@ import { PHRASES } from "../data/data";
 function VocabularyListScreen({ navigation, route }) {
 
   var database;
-  if (route.params.dataType === "Vocabulary"){
+  var type = route.params.dataType;
+  
+  if (type === "Vocabulary"){
     database = VOCABULARY;  
   }
   else{
@@ -26,6 +28,8 @@ function VocabularyListScreen({ navigation, route }) {
     return (
       <VocabularyListItem
         word={itemData.item.optionPt}
+        phrase={itemData.item.description}
+        type= {type}
         onPress={pressHandler}
       />
     );

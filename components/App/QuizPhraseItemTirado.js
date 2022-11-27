@@ -3,10 +3,10 @@ import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
 import { Alert } from "react-native";
 
 import Title from "../UI/Title";
-import PhraseButton from "../../components/UI/PhraseButton";
+import PhraseButton from "../UI/PhraseButton";
 import Colors from "../../constants/colors";
-import Card from "../../components/UI/Card";
-import AudioPlayerButton from "../../components/UI/AudioPlayerButton";
+import Card from "../UI/Card";
+import AudioPlayerButton from "../UI/AudioPlayerButton";
 
 function QuizPhraseItem({
   phrase,

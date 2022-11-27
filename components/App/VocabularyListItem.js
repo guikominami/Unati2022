@@ -2,7 +2,17 @@ import { View, Text, StyleSheet, Pressable } from 'react-native';
 
 import Colors from '../../constants/colors';
 
-function VocabularyListItem({ word, onPress }){
+function VocabularyListItem({ word, phrase, type, onPress }){
+
+  var listDescription;
+
+  if (type === "Vocabulary"){
+    listDescription = word;
+  }
+  else{
+    listDescription = phrase;
+  }
+
   return(
     <View style={styles.listItem}>
       <Pressable 
@@ -12,7 +22,7 @@ function VocabularyListItem({ word, onPress }){
       >
         <View style={styles.innerContainer}>
           <Text style={styles.itemText} adjustsFontSizeToFit numberOfLines={2}>
-            {word}
+            {listDescription}
           </Text>
         </View>
       </Pressable>      

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View, ImageBackground, StyleSheet, Dimensions } from "react-native";
 
 import QuizItem from "../components/App/QuizItem";
-import QuizPhraseItem from "../components/App/QuizPhraseItem";
+import QuizPhraseItem from "../components/App/QuizPhraseItemTirado";
 
 import { VOCABULARY } from "../data/data";
 import { PHRASES } from "../data/data";
@@ -11,14 +11,17 @@ function VocabularyLearnScreen({ route }) {
   var initialWordId = 0;
 
   var data;
+  var type;
 
   //console.log(route.params.dataType);
 
   if(route.params.dataType === "Vocabulary"){
     data = VOCABULARY;
+    type = "Vocabulary";
   }
   else{
     data = PHRASES;
+    type = "Phrase";
   }
 
   if (route.params.wordId !== "") {
@@ -60,7 +63,6 @@ function VocabularyLearnScreen({ route }) {
     }
   }
 
-  if(route.params.dataType === "Vocabulary"){
     return (
       <View style={styles.rootContainer}>
         <QuizItem
@@ -71,24 +73,10 @@ function VocabularyLearnScreen({ route }) {
           onOptionCorrectSelected={optionSelectedHandler}
           audio={selectedWord.audio}
           image={selectedWord.image}
+          type={type}
         />
       </View>
     );
-  }
-  else{
-    return (
-      <View style={styles.rootContainer}>
-        <QuizPhraseItem
-          phrase={selectedWord.phrase}
-          option1={optionWord1}
-          option2={optionWord2}
-          optionCorrect={selectedWord.optionCorrect}
-          onOptionCorrectSelected={optionSelectedHandler}
-          audio={selectedWord.audio}
-        />
-      </View>
-    );
-  }
 }
 
 export default VocabularyLearnScreen;
