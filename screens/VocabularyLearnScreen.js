@@ -1,19 +1,16 @@
 import { useState } from "react";
-import { View, ImageBackground, StyleSheet, Dimensions } from "react-native";
+import { View, StyleSheet, Dimensions } from "react-native";
 
 import QuizItem from "../components/App/QuizItem";
-import QuizPhraseItem from "../components/App/QuizPhraseItemTirado";
 
 import { VOCABULARY } from "../data/data";
 import { PHRASES } from "../data/data";
 
-function VocabularyLearnScreen({ route }) {
-  var initialWordId = 0;
+const VocabularyLearnScreen = ({ route }) => {
+  var initialWordId = 1;
 
   var data;
   var type;
-
-  //console.log(route.params.dataType);
 
   if(route.params.dataType === "Vocabulary"){
     data = VOCABULARY;
@@ -22,11 +19,13 @@ function VocabularyLearnScreen({ route }) {
   else{
     data = PHRASES;
     type = "Phrase";
-  }
+  }  
+
+  //console.log(route.params.dataType);
 
   if (route.params.wordId !== "") {
     initialWordId = route.params.wordId;
-  } else {
+  } else if (type === "Vocabulary") {
     initialWordId = generateWordId();
   }
 
@@ -47,9 +46,20 @@ function VocabularyLearnScreen({ route }) {
   var optionWord2 = selectedWord.option2;
 
   function optionSelectedHandler() {
-    setCurrentWord(generateWordId());
-    //passa para a próxima pergunta (SE ACHAR MELHOR IR SEQUENCIAL)
-    //setCurrentWord(currentWordId + 1);
+
+    if (type === "Vocabulary"){
+      //se for palavras, sortear
+      setCurrentWord(generateWordId());
+    }
+    else{
+        //Se for frase, ir sequencial
+      if (currentWordId === data.length){
+        setCurrentWord(1);
+      }
+      else{
+        setCurrentWord(currentWordId + 1);        
+      }
+    }
   }
 
   generateRandom();

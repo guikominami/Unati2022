@@ -3,10 +3,34 @@ import Vocabulary from "../models/vocabulary";
 import Phrase from "../models/phrases";
 
 export const CATEGORIES = [
-  new Category(1, "Desafio de Vocabulário", "#f4ebdc", "VocabularyLearnScreen", "Vocabulary"),
-  new Category(2, "Lista de Vocabulário", "#CF9B33", "VocabularyListScreen", "Vocabulary"),
-  new Category(3, "Desafio de Frases", "#7E2E27", "VocabularyLearnScreen", "Phrase"),
-  new Category(4, "Lista de Frases", "#3A1C1D", "VocabularyListScreen", "Phrase"),
+  new Category(
+    1,
+    "Desafio de Vocabulário",
+    "#f4ebdc",
+    "VocabularyLearnScreen",
+    "Vocabulary"
+  ),
+  new Category(
+    2,
+    "Lista de Vocabulário",
+    "#CF9B33",
+    "VocabularyListScreen",
+    "Vocabulary"
+  ),
+  new Category(
+    3,
+    "Desafio de Frases",
+    "#7E2E27",
+    "VocabularyLearnScreen",
+    "Phrase"
+  ),
+  new Category(
+    4,
+    "Lista de Frases",
+    "#3A1C1D",
+    "VocabularyListScreen",
+    "Phrase"
+  ),
 ];
 
 export const VOCABULARY = [
@@ -2025,74 +2049,344 @@ export const VOCABULARY = [
 export const PHRASES = [
   new Phrase(
     1,
-    "O vestido da moça é bonito",
+    "O vestido da moca é bonito",
     "Váhere hîxo ne ârunoe",
     "Uhé’ekoti hîxo ne ârunoe",
-    "Vestido",
+    "vestido",
     "Uhé’ekoti hîxo ne ârunoe",
-    require('../assets/audios/phrases/vestido.wav')
+    require("../assets/audios/phrases/vestido.mp3")
   ),
   new Phrase(
     2,
     "A flor é cheirosa",
+    "Úheti ihopune ne itunoevoti",
     "háheti ne itunoevoti",
-    "Úheti ihópune ne itunoevoti",
-    "Flor",
-    "Úheti ihópune ne itunoevoti",
-    require('../assets/audios/phrases/flor.wav')
+    "flor",
+    "Úheti ihopune ne itunoevoti",
+    require("../assets/audios/phrases/flor.mp3")
   ),
   new Phrase(
     3,
     "A mulher indígena é linda",
+    "Exoketi seno ne kopénoti",
     "Uhé’ekoti ne kopenoti",
-    "Exóketi seno ne kopénoti",
-    "Mulher indígena",
-    "Exóketi seno ne kopénoti",
-    require('../assets/audios/phrases/mulher_indigena.wav')
+    "mulher indigena",
+    "Exoketi seno ne kopénoti",
+    require("../assets/audios/phrases/mulher_indigena.mp3")
   ),
   new Phrase(
     4,
     "Aqui tem caju vermelha e amarela",
     "úheti ne kâxu",
     "Apé yaye hararáiti yoko hiyáiti kâxu",
-    "Caju",
+    "caju",
     "Apé yaye hararáiti yoko hiyáiti kâxu",
-    require('../assets/audios/phrases/caju.wav')
+    require("../assets/audios/phrases/caju.mp3")
   ),
   new Phrase(
     5,
-    "O doce de abóbora é uma delícia",
+    "O doce de abobora é uma delícia",
+    "Úheti ndúsena kâme",
     "Tíuiti ne kâme",
+    "abobora",
     "Úheti ndúsena kâme",
-    "Doce de abóbora",
-    "Úheti ndúsena kâme",
-    require('../assets/audios/phrases/abobora.wav')
+    require("../assets/audios/phrases/abobora.mp3")
   ),
   new Phrase(
     6,
     "O macaco quer comer banana",
+    "Kahá’ati níkea pânana ne kâi",
     "Eno pânana yaye",
+    "banana",
     "Kahá’ati níkea pânana ne kâi",
-    "Banana",
-    "Kahá’ati níkea pânana ne kâi",
-    require('../assets/audios/phrases/banana.wav')
+    require("../assets/audios/phrases/banana.mp3")
   ),
   new Phrase(
     7,
     "O papagaio é conversador",
+    "Éxetinati ne ko’êru",
     "Ixépati ne ko’êru",
+    "papagaio",
     "Éxetinati ne ko’êru",
-    "Papagaio",
-    "Éxetinati ne ko’êru",
-    require('../assets/audios/phrases/papagaio.wav')
+    require("../assets/audios/phrases/papagaio.mp3")
   ),
   new Phrase(
     8,
     "Os pés da perereca são gelados",
+    "Kásati hêve ne verékeke",
     "Upôriti ne verékeke",
+    "perereca",
     "Kásati hêve ne verékeke",
-    "Perereca",
-    "Kásati hêve ne verékeke",
-    require('../assets/audios/phrases/perereca.wav')
+    require("../assets/audios/phrases/perereca.mp3")
+  ),
+  new Phrase(
+    9,
+    "sorria todos os dias",
+    "Yékapu uha koeti kaxe",
+    "mbikoa ne koexoe",
+    "sorria",
+    "Yékapu uha koeti kaxe",
+    require("../assets/audios/phrases/9.mp3")
+  ),
+  new Phrase(
+    10,
+    "todo domingo tem jogo de bingo",
+    "Héu Koeti lûmingu ape kuríkoti bingú",
+    "Kahá’a úti têyokono vitúkeovo",
+    "todo domingo",
+    "Héu Koeti lûmingu ape kuríkoti bingú",
+    require("../assets/audios/phrases/10.mp3")
+  ),
+  new Phrase(
+    11,
+    "adoro laranja e pocã",
+    "Anzá’ axo ra nâranga yoko pouca",
+    "Anzá’ ra pouca nâranga axo yoko",
+    "adoro laranja e pocã",
+    "Anzá’ axo ra nâranga yoko pouca",
+    require("../assets/audios/phrases/11.mp3")
+  ),
+  new Phrase(
+    12,
+    "gosto de suco de couve com limão",
+    "Ya pohuti kaxé, inámati exoneti limão",
+    "yomo’onjo sukuna kouve yoko limão",
+    "suco de couve",
+    "yomo’onjo sukuna kouve yoko limão",
+    require("../assets/audios/phrases/12.mp3")
+  ),
+  new Phrase(
+    13,
+    "tenho medo de cobra",
+    "ipúhikone koexoe",
+    "mbikoa ne koexoe",
+    "tenho medo de cobra",
+    "mbikoa ne koexoe",
+    require("../assets/audios/phrases/13.mp3")
+  ),
+  new Phrase(
+    14,
+    "o dinheiro saiu",
+    "mbikoa ne koexoe",
+    "ipúhikone tiûketi",
+    "o dinheiro saiu",
+    "ipúhikone tiûketi",
+    require("../assets/audios/phrases/14.mp3")
+  ),
+  new Phrase(
+    15,
+    "Há poucas pessoas que falam nosso idioma",
+    "Ya pohuti kaxé, inámati exoneti",
+    "Akone axú’ina koyúhoti vemó’u",
+    "falam nosso idioma",
+    "Akone axú’ina koyúhoti vemó’u",
+    require("../assets/audios/phrases/15.mp3")
+  ),
+  new Phrase(
+    16,
+    "eu danço a siputerena",
+    "mbikoa ne koexoe",
+    "Nziokexoa ra siputerena",
+    "siputerena",
+    "Nziokexoa ra siputerena",
+    require("../assets/audios/phrases/16.mp3")
+  ),
+  new Phrase(
+    17,
+    "aqui em Limão Verde, há muitas igrejas.",
+    "eno imokóvokuti yara tonó’iti límaum",
+    "Yomó’oxo selúlar ne",
+    "Limão Verde",
+    "eno imokóvokuti yara tonó’iti límaum",
+    require("../assets/audios/phrases/17.mp3")
+  ),
+  new Phrase(
+    18,
+    "hoje em dia, só internet",
+    "ko pohéane oyene internet",
+    "ko ́oyene pohéane internet",
+    "só internet",
+    "ko ́oyene pohéane internet",
+    require("../assets/audios/phrases/18.mp3")
+  ),
+  new Phrase(
+    19,
+    "o rapaz é craque",
+    "Aneko nonéti nakáku ítuke",
+    "Ahúkoti ne homoêhou",
+    "o rapaz é craque",
+    "Ahúkoti ne homoêhou",
+    require("../assets/audios/phrases/19.mp3")
+  ),
+  new Phrase(
+    20,
+    "cada dia, um novo aprendizado",
+    "Ya pohuti kaxé, inámati exoneti",
+    "ipúhikone tiûketi",
+    "um novo aprendizado",
+    "Ya pohuti kaxé, inámati exoneti",
+    require("../assets/audios/phrases/20.mp3")
+  ),
+  new Phrase(
+    21,
+    "quero aprender a falar do nosso idioma",
+    "Enjo’ ukuvane ra kótuti kaxe têrenoe",
+    "ngaha’a enjea ngoyuhoiyea ra vemo’u têrenoe",
+    "nosso idioma",
+    "ngaha’a enjea ngoyuhoiyea ra vemo’u têrenoe",
+    require("../assets/audios/phrases/21.mp3")
+  ),
+  new Phrase(
+    22,
+    "já existem muitos veículos em nossa comunidade",
+    "Ahúkoti ne homoêhou",
+    "enone ivú’eti yara vípuxovoku",
+    "veículos",
+    "enone ivú’eti yara vípuxovoku",
+    require("../assets/audios/phrases/22.mp3")
+  ),
+  new Phrase(
+    23,
+    "minha finada avó fazia tecelagem",
+    "ixuxúkoti itúkovo onzé’ikene",
+    "Ya mekúke, ako’o úko ya agóstu onzé’ikene",
+    "minha finada avó",
+    "ixuxúkoti itúkovo onzé’ikene",
+    require("../assets/audios/phrases/23.mp3")
+  ),
+  new Phrase(
+    24,
+    "os professores são indígenas",
+    "kopenoti ihíkaxotihiko",
+    "kopenoti ne ihíkaxotihiko",
+    "os professores são indígenas",
+    "kopenoti ne ihíkaxotihiko",
+    require("../assets/audios/phrases/24.mp3")
+  ),
+  new Phrase(
+    25,
+    "Aqui no Limão não há mais muitos pés de manga",
+    "Anzá’axo orópeuti váka",
+    "Ako’o ne eno xuve mangá, yaye límaum ke",
+    "pés de manga",
+    "Ako’o ne eno xuve mangá, yaye límaum ke",
+    require("../assets/audios/phrases/25.mp3")
+  ),
+  new Phrase(
+    26,
+    "Desejo a você um bom trabalho",
+    "ixuxúkoti itúkovo onzé’ikene",
+    "Ngaha’ainopi unatiya ke’ítukeiyi",
+    "Desejo a você",
+    "Ngaha’ainopi unatiya ke’ítukeiyi",
+    require("../assets/audios/phrases/26.mp3")
+  ),
+  new Phrase(
+    27,
+    "Antigamente não chovia em agosto",
+    "Ya mekúke, ako’o úko ya agóstu",
+    "Ahúkoti ne homoêhou agóstu",
+    "Antigamente",
+    "Ya mekúke, ako’o úko ya agóstu",
+    require("../assets/audios/phrases/27.mp3")
+  ),
+  new Phrase(
+    28,
+    "As mulheres do Limão são trabalhadoras",
+    "Ngahá’api yaye ayonovo",
+    "Senohikó ihae Límaum ko’ítuketihiko",
+    "As mulheres do Limão",
+    "Senohikó ihae Límaum ko’ítuketihiko",
+    require("../assets/audios/phrases/28.mp3")
+  ),
+  new Phrase(
+    29,
+    "As crianças gostam de celular",
+    "Yomó’oxo selúlar ne kalivono",
+    "Ako’o ne eno xuve mangá, yaye límaum ke",
+    "As crianças",
+    "Yomó’oxo selúlar ne kalivono",
+    require("../assets/audios/phrases/29.mp3")
+  ),
+  new Phrase(
+    30,
+    "O rabo do animal é comprido",
+    "Enjo’ ukuvane ra kótuti kaxe",
+    "Hána’iti îhi ne hó’openo",
+    "O rabo do animal",
+    "Hána’iti îhi ne hó’openo",
+    require("../assets/audios/phrases/30.mp3")
+  ),
+  new Phrase(
+    31,
+    "Adoro carne assada",
+    "Hána’iti îhi ne hó’openo",
+    "Anzá’axo orópeuti váka",
+    "Adoro carne assada",
+    "Anzá’axo orópeuti váka",
+    require("../assets/audios/phrases/31.mp3")
+  ),
+  new Phrase(
+    32,
+    "Antigamente as pessoas iam no córrego lavar roupa",
+    "ixuxúkoti itúkovo onzé’ikene kipóheyea",
+    "Yaneko mekúke nótuvaka yóno xâne kipóheyea",
+    "Antigamente",
+    "Yaneko mekúke nótuvaka yóno xâne kipóheyea",
+    require("../assets/audios/phrases/32.mp3")
+  ),
+  new Phrase(
+    33,
+    "Na roça do Xóve tem milho, feijão e abóbora",
+    "Eno sôporo, pêxou, xúpu, kamê isáneke Xóve",
+    "Nziokexoa ra siputerena",
+    "Na roça do Xóve",
+    "Eno sôporo, pêxou, xúpu, kamê isáneke Xóve",
+    require("../assets/audios/phrases/33.mp3")
+  ),
+  new Phrase(
+    34,
+    "André tem plantação de arroz",
+    "Aneko nonéti nakáku ítuke Andre",
+    "Aneko nakáku nonéti ra ítuke Andre",
+    "André tem plantação",
+    "Aneko nonéti nakáku ítuke Andre",
+    require("../assets/audios/phrases/34.mp3")
+  ),
+  new Phrase(
+    35,
+    "Queremos respeito com a nossa cultura",
+    "Kahá’a úti têyokono vitúkeovo",
+    "Hána’iti îhi vitúkeovo ne hó’openo",
+    "Queremos respeito",
+    "Kahá’a úti têyokono vitúkeovo",
+    require("../assets/audios/phrases/35.mp3")
+  ),
+  new Phrase(
+    36,
+    "A pandemia fez com que os alunos atrasassem",
+    "Okó’okorixoa ihíkaxutihiko pandémia",
+    "Okó’okorixoa ihíkaxutihiko ra pandémia",
+    "A pandemia",
+    "Okó’okorixoa ihíkaxutihiko ra pandémia",
+    require("../assets/audios/phrases/36.mp3")
+  ),
+  new Phrase(
+    37,
+    "Já acostumei com o calor do sol",
+    "Enjo’ ukuvane ra kótuti kaxe",
+    "Ahúkoti ne homoêhou",
+    "Já acostumei",
+    "Enjo’ ukuvane ra kótuti kaxe",
+    require("../assets/audios/phrases/37.mp3")
+  ),
+  new Phrase(
+    38,
+    "Quero você aqui",
+    "Ahúkoti ne homoêhou",
+    "Ngahá’api yaye",
+    "Quero você aqui",
+    "Ngahá’api yaye",
+    require("../assets/audios/phrases/38.mp3")
   ),
 ];
