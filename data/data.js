@@ -36,2013 +36,2172 @@ export const CATEGORIES = [
 export const VOCABULARY = [
   new Vocabulary(
     1,
-    "nûnu,naná",
     "nûnu",
     "naná",
     "Abacaxi",
     "naná",
     require("../assets/images/vocabulary/abacaxi.jpg"),
-    require("../assets/audios/vocabulary/abacaxi.mp3")
+    require("../assets/audios/vocabulary/abacaxi.wav")
   ),
   new Vocabulary(
     2,
-    "orekáti,kevîti",
     "orekáti",
     "kevîti",
     "Abanico",
     "kevîti",
     require("../assets/images/vocabulary/abanico.jpg"),
-    require("../assets/audios/vocabulary/abanico.mp3")
+    require("../assets/audios/vocabulary/abanico.wav")
   ),
   new Vocabulary(
     3,
-    "oropeuti,oropa",
     "oropeuti",
     "oropa",
     "Abelha",
     "oropa",
     require("../assets/images/vocabulary/abelha.jpg"),
-    require("../assets/audios/vocabulary/abelha.mp3")
+    require("../assets/audios/vocabulary/abelha.wav")
   ),
   new Vocabulary(
     4,
-    "Kâmo,kâme",
     "Kâmo",
     "kâme",
     "Abobora",
     "kâme",
     require("../assets/images/vocabulary/abobora.jpg"),
-    require("../assets/audios/vocabulary/abobora.mp3")
+    require("../assets/audios/vocabulary/abobora.wav")
   ),
   new Vocabulary(
     5,
-    "kovoxeati,kovo’ero",
     "kovoxeati",
     "kovo’ero",
     "Águia",
     "kovo’ero",
     require("../assets/images/vocabulary/aguia.jpg"),
-    require("../assets/audios/vocabulary/aguia.mp3")
+    require("../assets/audios/vocabulary/aguia.wav")
   ),
   new Vocabulary(
     6,
-    "tîpe,tôpe",
     "tîpe",
     "tôpe",
     "Agulha",
     "tôpe",
     require("../assets/images/vocabulary/agulha.jpg"),
-    require("../assets/audios/vocabulary/agulha.mp3")
+    require("../assets/audios/vocabulary/agulha.wav")
   ),
   new Vocabulary(
     7,
-    "Nêvo,névoe",
     "Nêvo",
     "névoe",
     "Algodão",
     "névoe",
     require("../assets/images/vocabulary/algodao.jpg"),
-    require("../assets/audios/vocabulary/algodao.mp3")
+    require("../assets/audios/vocabulary/algodao.wav")
   ),
   new Vocabulary(
     8,
-    "kurikoâti,kurîke",
     "kurikoâti",
     "kurîke",
     "Amendoim",
     "kurîke",
-    require("../assets/images/vocabulary/amendoin.jpg"),
-    require("../assets/audios/vocabulary/amendoin.mp3")
+    require("../assets/images/vocabulary/amendoim.jpg"),
+    require("../assets/audios/vocabulary/amendoim.wav")
   ),
   new Vocabulary(
     9,
-    "uhôro,horoxo",
     "uhôro",
     "horoxo",
     "Anel",
     "horoxo",
     require("../assets/images/vocabulary/anel.jpg"),
-    require("../assets/audios/vocabulary/anel.mp3")
+    require("../assets/audios/vocabulary/anel.wav")
   ),
   new Vocabulary(
     10,
-    "tokerehi,tokoe",
     "tokerehi",
     "tokoe",
-    "Angola(galinha)",
+    "Angola (galinha)",
     "tokoe",
     require("../assets/images/vocabulary/angola.jpg"),
-    require("../assets/audios/vocabulary/angola.mp3")
+    require("../assets/audios/vocabulary/angola.wav")
   ),
   new Vocabulary(
     11,
-    "tâki,tâe",
+    "Hó`openo",
+    "Yehi",
+    "Animal, bicho",
+    "Hó`openo",
+    require("../assets/images/vocabulary/animal.jpg"),
+    require("../assets/audios/vocabulary/animal.wav")
+  ),
+  new Vocabulary(
+    12,
+    "Mayane kámo",
+    "Mbone",
+    "Anta",
+    "Mayane kámo",
+    require("../assets/images/vocabulary/anta.jpg"),
+    require("../assets/audios/vocabulary/anta.wav")
+  ),
+  new Vocabulary(
+    13,
     "tâki",
     "tâe",
     "Anúbranco",
     "tâe",
     require("../assets/images/vocabulary/anubranco.jpg"),
-    require("../assets/audios/vocabulary/anubranco.mp3")
+    require("../assets/audios/vocabulary/anubranco.wav")
   ),
   new Vocabulary(
-    12,
-    "povôti,povôko",
+    14,
     "povôti",
     "povôko",
     "Anúpreto",
     "povôko",
     require("../assets/images/vocabulary/anupreto.jpg"),
-    require("../assets/audios/vocabulary/anupreto.mp3")
+    require("../assets/audios/vocabulary/anupreto.wav")
   ),
   new Vocabulary(
-    13,
-    "númiru,númiku",
+    15,
     "númiru",
     "númiku",
     "Anzol",
     "númiku",
     require("../assets/images/vocabulary/anzol.jpg"),
-    require("../assets/audios/vocabulary/anzol.mp3")
+    require("../assets/audios/vocabulary/anzol.wav")
   ),
   new Vocabulary(
-    14,
-    "Váhere,varâka",
+    16,
     "Váhere",
     "varâka",
     "Aracuã",
     "varâka",
     require("../assets/images/vocabulary/aracua.jpg"),
-    require("../assets/audios/vocabulary/aracua.mp3")
+    require("../assets/audios/vocabulary/aracua.wav")
   ),
   new Vocabulary(
-    15,
-    "Váhere,váhaha",
+    17,
     "Váhere",
     "váhaha",
     "Aranha",
     "váhaha",
     require("../assets/images/vocabulary/aranha.jpg"),
-    require("../assets/audios/vocabulary/aranha.mp3")
+    require("../assets/audios/vocabulary/aranha.wav")
   ),
   new Vocabulary(
-    16,
-    "Hiyáiti,hiyáinekuti",
+    18,
     "Hiyáiti",
     "hiyáinekuti",
     "Ararinha",
     "hiyáinekuti",
     require("../assets/images/vocabulary/arara.jpg"),
-    require("../assets/audios/vocabulary/ararinha.mp3")
+    require("../assets/audios/vocabulary/ararinha.wav")
   ),
   new Vocabulary(
-    17,
-    "opêti,úpikovoe",
+    19,
     "opêti",
     "úpikovoe",
     "Arcoíris",
     "úpikovoe",
     require("../assets/images/vocabulary/arcoiris.jpg"),
-    require("../assets/audios/vocabulary/arcoiris.mp3")
+    require("../assets/audios/vocabulary/arcoiris.wav")
   ),
   new Vocabulary(
-    18,
-    "vorîri,harîri",
+    20,
     "vorîri",
     "harîri",
     "Areia",
     "harîri",
     require("../assets/images/vocabulary/areia.jpg"),
-    require("../assets/audios/vocabulary/areia.mp3")
+    require("../assets/audios/vocabulary/areia.wav")
   ),
   new Vocabulary(
-    19,
-    "nâku,nakáku",
+    21,
     "nâku",
     "nakáku",
     "Arroz",
     "nakáku",
     require("../assets/images/vocabulary/arroz.jpg"),
-    require("../assets/audios/vocabulary/arroz.mp3")
+    require("../assets/audios/vocabulary/arroz.wav")
   ),
   new Vocabulary(
-    20,
-    "Tíketi,tíkoti",
+    22,
     "Tíketi",
     "tíkoti",
     "Árvore",
     "tíkoti",
     require("../assets/images/vocabulary/arvore.jpg"),
-    require("../assets/audios/vocabulary/arvore.mp3")
+    require("../assets/audios/vocabulary/arvore.wav")
   ),
   new Vocabulary(
-    21,
-    "kevino,kêvi",
+    23,
     "kevino",
     "kêvi",
     "Asa",
     "kêvi",
     require("../assets/images/vocabulary/asa.jpg"),
-    require("../assets/audios/vocabulary/asa.mp3")
+    require("../assets/audios/vocabulary/asa.wav")
   ),
   new Vocabulary(
-    22,
-    "opêti,osoiuti",
+    24,
     "opêti",
     "osoiuti",
     "Assado",
     "osoiuti",
     require("../assets/images/vocabulary/assado.jpg"),
-    require("../assets/audios/vocabulary/assado.mp3")
+    require("../assets/audios/vocabulary/assado.wav")
   ),
   new Vocabulary(
-    23,
-    "Penanana,Pânana",
+    25,
+    "Kotíveti",
+    "Tákure`i",
+    "Azedo, doído",
+    "Kotíveti",
+    require("../assets/images/vocabulary/doido.jpg"),
+    require("../assets/audios/vocabulary/azedo.wav")
+  ),
+  new Vocabulary(
+    26,
     "Penanana",
     "Pânana",
     "Banana",
     "Pânana",
     require("../assets/images/vocabulary/banana.jpg"),
-    require("../assets/audios/vocabulary/banana.mp3")
+    require("../assets/audios/vocabulary/banana.wav")
   ),
   new Vocabulary(
-    24,
-    "Nípae,nipâke",
+    27,
     "Nípae",
     "nipâke",
     "Baralho",
     "nipâke",
     require("../assets/images/vocabulary/baralho.jpg"),
-    require("../assets/audios/vocabulary/baralho.mp3")
+    require("../assets/audios/vocabulary/baralho.wav")
   ),
   new Vocabulary(
-    25,
-    "Yômo,yomômo",
+    28,
     "Yômo",
     "yomômo",
     "Barro",
     "yomômo",
     require("../assets/images/vocabulary/barro.jpg"),
-    require("../assets/audios/vocabulary/barro.mp3")
+    require("../assets/audios/vocabulary/barro.wav")
   ),
   new Vocabulary(
-    26,
-    "Xulûki,xulukúpenovoti",
+    29,
     "Xulûki",
     "xulukúpenovoti",
     "Batata assada",
     "xulukúpenovoti",
     require("../assets/images/vocabulary/batataassada.jpg"),
-    require("../assets/audios/vocabulary/batataassada.mp3")
+    require("../assets/audios/vocabulary/batataassada.wav")
   ),
   new Vocabulary(
-    27,
-    "Koye,ko’ê",
+    30,
     "Koye",
     "ko’ê",
     "Batata",
     "ko’ê",
     require("../assets/images/vocabulary/batata.jpg"),
-    require("../assets/audios/vocabulary/batata.mp3")
+    require("../assets/audios/vocabulary/batata.wav")
   ),
   new Vocabulary(
-    28,
-    "Kohípoti,kohíhiti",
+    31,
     "Kohípoti",
     "kohíhiti",
     "Bêbado",
     "kohíhiti",
     require("../assets/images/vocabulary/bebado.jpg"),
-    require("../assets/audios/vocabulary/bebado.mp3")
+    require("../assets/audios/vocabulary/bebado.wav")
   ),
   new Vocabulary(
-    29,
-    "orekoâti,orekáti",
+    32,
     "orekoâti",
     "orekáti",
     "Bebida",
     "orekáti",
     require("../assets/images/vocabulary/bebida.jpg"),
-    require("../assets/audios/vocabulary/bebida.mp3")
+    require("../assets/audios/vocabulary/bebida.wav")
   ),
   new Vocabulary(
-    30,
-    "kâvo,pâho",
+    33,
+    "Imúkaya",
+    "Póhuti",
+    "Bocaiuva",
+    "Imúkaya",
+    require("../assets/images/vocabulary/bocaiuva.jpg"),
+    require("../assets/audios/vocabulary/bocaiuva.wav")
+  ),
+  new Vocabulary(
+    34,
     "kâvo",
     "pâho",
     "Boca",
     "pâho",
     require("../assets/images/vocabulary/boca.jpg"),
-    require("../assets/audios/vocabulary/boca.mp3")
+    require("../assets/audios/vocabulary/boca.wav")
   ),
   new Vocabulary(
-    31,
-    "vaxôti,váxikita",
+    35,
     "vaxôti",
     "váxikita",
     "Bode",
     "váxikita",
     require("../assets/images/vocabulary/bode.jpg"),
-    require("../assets/audios/vocabulary/bode.mp3")
+    require("../assets/audios/vocabulary/bode.wav")
   ),
   new Vocabulary(
-    32,
-    "Tûi,vûi",
+    36,
     "Tûi",
     "vûi",
     "Boi",
     "vûi",
     require("../assets/images/vocabulary/boi.jpg"),
-    require("../assets/audios/vocabulary/boi.mp3")
+    require("../assets/audios/vocabulary/boi.wav")
   ),
   new Vocabulary(
-    33,
-    "Peréxa,pepêke",
+    37,
     "Peréxa",
     "pepêke",
     "Bombo",
     "pepêke",
     require("../assets/images/vocabulary/bombo.jpg"),
-    require("../assets/audios/vocabulary/bombo.mp3")
+    require("../assets/audios/vocabulary/bombo.wav")
   ),
   new Vocabulary(
-    34,
-    "váka,vaka-váka",
+    38,
+    "Uhé`ekoti",
+    "Yehi",
+    "Bonito",
+    "Uhé`ekoti",
+    require("../assets/images/vocabulary/bonito.jpg"),
+    require("../assets/audios/vocabulary/bonito.wav")
+  ),
+  new Vocabulary(
+    39,
     "váka",
     "vaka-váka",
     "Borboleta",
     "vaka-váka",
     require("../assets/images/vocabulary/borboleta.jpg"),
-    require("../assets/audios/vocabulary/borboleta.mp3")
+    require("../assets/audios/vocabulary/borboleta.wav")
   ),
   new Vocabulary(
-    35,
-    "Métakiku,muníke",
+    40,
     "Métakiku",
     "muníke",
     "Brasa",
     "muníke",
     require("../assets/images/vocabulary/brasa.jpg"),
-    require("../assets/audios/vocabulary/brasa.mp3")
+    require("../assets/audios/vocabulary/brasa.wav")
   ),
   new Vocabulary(
-    36,
-    "Kalihuti,kakêti",
+    41,
     "Kalihuti",
     "kakêti",
     "Brinco",
     "kakêti",
     require("../assets/images/vocabulary/brinco.jpg"),
-    require("../assets/audios/vocabulary/brinco.mp3")
+    require("../assets/audios/vocabulary/brinco.wav")
   ),
   new Vocabulary(
-    37,
-    "Takurei,tokôro",
+    42,
     "Takurei",
     "tokôro",
     "Bugio",
     "tokôro",
     require("../assets/images/vocabulary/bugiu.jpg"),
-    require("../assets/audios/vocabulary/bugiu.mp3")
+    require("../assets/audios/vocabulary/bugiu.wav")
   ),
   new Vocabulary(
-    38,
-    "Horoxo,uhôro",
+    43,
     "Horoxo",
     "uhôro",
     "Buraco",
     "uhôro",
     require("../assets/images/vocabulary/buraco.jpg"),
-    require("../assets/audios/vocabulary/buraco.mp3")
+    require("../assets/audios/vocabulary/buraco.wav")
   ),
   new Vocabulary(
-    39,
-    "Morôuke,muríka",
+    44,
     "Morôuke",
     "muríka",
     "Burro",
     "muríka",
     require("../assets/images/vocabulary/burro.jpg"),
-    require("../assets/audios/vocabulary/burro.mp3")
+    require("../assets/audios/vocabulary/burro.wav")
   ),
   new Vocabulary(
-    40,
-    "mbâriti,mbokoti",
+    45,
     "mbâriti",
     "mbokoti",
     "Cachoeira",
     "mbokoti",
     require("../assets/images/vocabulary/cachoeira.jpg"),
-    require("../assets/audios/vocabulary/cachoeira.mp3")
+    require("../assets/audios/vocabulary/cachoeira.wav")
   ),
   new Vocabulary(
-    41,
-    "Tamúiti,tamúku",
+    46,
     "Tamúiti",
     "tamúku",
     "Cachorro",
     "tamúku",
     require("../assets/images/vocabulary/cachorro.jpg"),
-    require("../assets/audios/vocabulary/cachorro.mp3")
+    require("../assets/audios/vocabulary/cachorro.wav")
   ),
   new Vocabulary(
-    42,
-    "kúxoa,kâxu",
+    47,
     "kúxoa",
     "kâxu",
     "Caju",
     "kâxu",
     require("../assets/images/vocabulary/caju.jpg"),
-    require("../assets/audios/vocabulary/caju.mp3")
+    require("../assets/audios/vocabulary/caju.wav")
   ),
   new Vocabulary(
-    43,
-    "Koyomâti,kolemétete",
+    48,
     "Koyomâti",
     "kolemétete",
     "Calango",
     "kolemétete",
     require("../assets/images/vocabulary/calango.jpg"),
-    require("../assets/audios/vocabulary/calango.mp3")
+    require("../assets/audios/vocabulary/calango.wav")
   ),
   new Vocabulary(
-    44,
-    "iparôti,porôti",
+    49,
     "iparôti",
     "porôti",
     "Calca",
     "porôti",
     require("../assets/images/vocabulary/calca.jpg"),
-    require("../assets/audios/vocabulary/calca.mp3")
+    require("../assets/audios/vocabulary/calca.wav")
   ),
   new Vocabulary(
-    45,
-    "Vápuma,vatéke",
+    50,
     "Vápuma",
     "vatéke",
     "Canoa",
     "vatéke",
     require("../assets/images/vocabulary/canoa.jpg"),
-    require("../assets/audios/vocabulary/canoa.mp3")
+    require("../assets/audios/vocabulary/canoa.wav")
   ),
   new Vocabulary(
-    46,
-    "Kâxu,evakáxu",
+    51,
     "Kâxu",
     "evakáxu",
     "Capivara",
     "evakáxu",
     require("../assets/images/vocabulary/capivara.jpg"),
-    require("../assets/audios/vocabulary/capivara.mp3")
+    require("../assets/audios/vocabulary/capivara.wav")
   ),
   new Vocabulary(
-    47,
-    "kopîe,kopíke",
+    52,
     "kopîe",
     "kopíke",
     "Carniceira (marimbondo)",
     "kopíke",
     require("../assets/images/vocabulary/carniceira.jpg"),
-    require("../assets/audios/vocabulary/carniceira.mp3")
+    require("../assets/audios/vocabulary/carniceira.wav")
   ),
   new Vocabulary(
-    48,
-    "Hîru,hirimítiti",
+    53,
     "Hîru",
     "hirimítiti",
     "Carrapato",
     "hirimítiti",
     require("../assets/images/vocabulary/carrapato.jpg"),
-    require("../assets/audios/vocabulary/carrapato.mp3")
+    require("../assets/audios/vocabulary/carrapato.wav")
   ),
   new Vocabulary(
-    49,
-    "kuríkoti,kôreta",
+    54,
     "kuríkoti",
     "kôreta",
     "Carroca",
     "kôreta",
     require("../assets/images/vocabulary/carroca.jpg"),
-    require("../assets/audios/vocabulary/carroca.mp3")
+    require("../assets/audios/vocabulary/carroca.wav")
   ),
   new Vocabulary(
-    50,
-    "pôu,xoromonike",
+    55,
     "pôu",
     "xoromonike",
     "Carvão",
     "xoromonike",
     require("../assets/images/vocabulary/carvao.jpg"),
-    require("../assets/audios/vocabulary/carvao.mp3")
+    require("../assets/audios/vocabulary/carvao.wav")
   ),
   new Vocabulary(
-    51,
-    "Ovâti,ovokúti",
+    56,
     "Ovâti",
     "ovokúti",
     "Casa",
     "ovokúti",
     require("../assets/images/vocabulary/casa.jpg"),
-    require("../assets/audios/vocabulary/casa.mp3")
+    require("../assets/audios/vocabulary/casa.wav")
   ),
   new Vocabulary(
-    52,
-    "kâmo,kámo",
+    57,
     "kâmo",
     "kámo",
     "Cavalo",
     "kámo",
     require("../assets/images/vocabulary/cavalo.jpg"),
-    require("../assets/audios/vocabulary/cavalo.mp3")
+    require("../assets/audios/vocabulary/cavalo.wav")
   ),
   new Vocabulary(
-    53,
-    "poréxoa,poké’e",
+    58,
     "poréxoa",
     "poké’e",
     "Chão",
     "poké’e",
     require("../assets/images/vocabulary/chao.jpg"),
-    require("../assets/audios/vocabulary/chao.mp3")
+    require("../assets/audios/vocabulary/chao.wav")
   ),
   new Vocabulary(
-    54,
-    "xovoe,xovoíti",
+    59,
     "xovoe",
     "xovoíti",
     "Chapéu",
     "xovoíti",
     require("../assets/images/vocabulary/chapeu.jpg"),
-    require("../assets/audios/vocabulary/chapeu.mp3")
+    require("../assets/audios/vocabulary/chapeu.wav")
   ),
   new Vocabulary(
-    55,
-    "Orokéxoti,oropeuti",
+    60,
     "Orokéxoti",
     "oropeuti",
     "Churrasco",
     "oropeuti",
     require("../assets/images/vocabulary/churrasco.jpg"),
-    require("../assets/audios/vocabulary/churrasco.mp3")
+    require("../assets/audios/vocabulary/churrasco.wav")
   ),
   new Vocabulary(
-    56,
-    "Úne,úko",
+    61,
     "Úne",
     "úko",
     "Chuva",
     "úko",
     require("../assets/images/vocabulary/chuva.jpg"),
-    require("../assets/audios/vocabulary/chuva.mp3")
+    require("../assets/audios/vocabulary/chuva.wav")
   ),
   new Vocabulary(
-    57,
-    "Hopúketi,hopíkiriri",
+    62,
     "Hopúketi",
     "hopíkiriri",
     "Cigarra",
     "hopíkiriri",
     require("../assets/images/vocabulary/cigarra.jpg"),
-    require("../assets/audios/vocabulary/cigarra.mp3")
+    require("../assets/audios/vocabulary/cigarra.wav")
   ),
   new Vocabulary(
-    58,
-    "kipohoti,hípo",
+    63,
     "kipohoti",
     "hípo",
     "Cigarro",
     "hípo",
     require("../assets/images/vocabulary/cigarro.jpg"),
-    require("../assets/audios/vocabulary/cigarro.mp3")
+    require("../assets/audios/vocabulary/cigarro.wav")
   ),
   new Vocabulary(
-    59,
-    "hôe,hoêti",
+    64,
     "hôe",
     "hoêti",
     "Cinto",
     "hoêti",
     require("../assets/images/vocabulary/cinto.jpg"),
-    require("../assets/audios/vocabulary/cinto.mp3")
+    require("../assets/audios/vocabulary/cinto.wav")
   ),
   new Vocabulary(
-    60,
-    "koéxu,koexoe",
+    65,
     "koéxu",
     "koexoe",
     "Cobra",
     "koexoe",
     require("../assets/images/vocabulary/cobra.jpg"),
-    require("../assets/audios/vocabulary/cobra.mp3")
+    require("../assets/audios/vocabulary/cobra.wav")
   ),
   new Vocabulary(
-    61,
-    "toké’novoti,konôum",
+    66,
     "toké’novoti",
     "konôum",
     "Coelho",
     "konôum",
     require("../assets/images/vocabulary/coelho.jpg"),
-    require("../assets/audios/vocabulary/coelho.mp3")
+    require("../assets/audios/vocabulary/coelho.wav")
   ),
   new Vocabulary(
-    62,
-    "nikâti,nakáti",
+    67,
     "nikâti",
     "nakáti",
     "Colar",
     "nakáti",
     require("../assets/images/vocabulary/colar.jpg"),
-    require("../assets/audios/vocabulary/colar.mp3")
+    require("../assets/audios/vocabulary/colar.wav")
   ),
   new Vocabulary(
-    63,
-    "hûra,hûrepe",
+    68,
     "hûra",
     "hûrepe",
     "Colher",
     "hûrepe",
     require("../assets/images/vocabulary/colher.jpg"),
-    require("../assets/audios/vocabulary/colher.mp3")
+    require("../assets/audios/vocabulary/colher.wav")
   ),
   new Vocabulary(
-    64,
-    "ekovoti,enovopeti",
+    69,
+    "Nikokónoti",
+    "Pêxou",
+    "Comida",
+    "Nikokónoti",
+    require("../assets/images/vocabulary/comida.jpg"),
+    require("../assets/audios/vocabulary/comida.wav")
+  ),
+  new Vocabulary(
+    70,
     "ekovoti",
     "enovopeti",
     "Copo",
     "enovopeti",
     require("../assets/images/vocabulary/copo.jpg"),
-    require("../assets/audios/vocabulary/copo.mp3")
+    require("../assets/audios/vocabulary/copo.wav")
   ),
   new Vocabulary(
-    65,
-    "omomikoti,omixoneti",
+    71,
     "omomikoti",
     "omixoneti",
     "Coracão",
     "omixoneti",
     require("../assets/images/vocabulary/coracao.jpg"),
-    require("../assets/audios/vocabulary/coracao.mp3")
+    require("../assets/audios/vocabulary/coracao.wav")
   ),
   new Vocabulary(
-    66,
-    "Marékoti,mâreso",
+    72,
     "Marékoti",
     "mâreso",
     "Corda",
     "mâreso",
     require("../assets/images/vocabulary/corda.jpg"),
-    require("../assets/audios/vocabulary/corda.mp3")
+    require("../assets/audios/vocabulary/corda.wav")
   ),
   new Vocabulary(
-    67,
-    "Hîyeu,hîyo",
+    73,
     "Hîyeu",
     "hîyo",
     "Correcão (formiga)",
     "hîyo",
     require("../assets/images/vocabulary/correicao.jpg"),
-    require("../assets/audios/vocabulary/correicao.mp3")
+    require("../assets/audios/vocabulary/correicao.wav")
   ),
   new Vocabulary(
-    68,
-    "Notúnati,notovaka",
+    74,
     "Notúnati",
     "notovaka",
     "Corrego",
     "notovaka",
     require("../assets/images/vocabulary/corrego.jpg"),
-    require("../assets/audios/vocabulary/corrego.mp3")
+    require("../assets/audios/vocabulary/corrego.wav")
   ),
   new Vocabulary(
-    69,
-    "Kamokínoti,kalivôno",
+    75,
     "Kamokínoti",
     "kalivôno",
     "Crianca",
     "kalivôno",
     require("../assets/images/vocabulary/crianca.jpg"),
-    require("../assets/audios/vocabulary/crianca.mp3")
+    require("../assets/audios/vocabulary/crianca.wav")
   ),
   new Vocabulary(
-    70,
-    "omomi,onokena",
+    76,
     "omomi",
     "onokena",
     "Cunhada",
     "onokena",
     require("../assets/images/vocabulary/cunhada.jpg"),
-    require("../assets/audios/vocabulary/cunhada.mp3")
+    require("../assets/audios/vocabulary/cunhada.wav")
   ),
   new Vocabulary(
-    71,
-    "ovea,onê’a",
+    77,
     "ovea",
     "onê’a",
     "Cunhado",
     "onê’a",
     require("../assets/images/vocabulary/cunhado.jpg"),
-    require("../assets/audios/vocabulary/cunhado.mp3")
+    require("../assets/audios/vocabulary/cunhado.wav")
   ),
   new Vocabulary(
-    72,
-    "mote,motôu",
+    78,
     "mote",
     "motôu",
     "Cupim",
     "motôu",
     require("../assets/images/vocabulary/cupim.jpg"),
-    require("../assets/audios/vocabulary/cupim.mp3")
+    require("../assets/audios/vocabulary/cupim.wav")
   ),
   new Vocabulary(
-    73,
-    "Ôemaka,oêti",
-    "Ôemaka",
+    79,
+    "Xurêre",
     "oêti",
     "Dente",
     "oêti",
     require("../assets/images/vocabulary/dente.jpg"),
-    require("../assets/audios/vocabulary/dente.mp3")
+    require("../assets/audios/vocabulary/dente.wav")
   ),
   new Vocabulary(
-    74,
-    "Tíkoti,tiuketi",
+    80,
     "Tíkoti",
     "tiuketi",
     "Dinheiro",
     "tiuketi",
     require("../assets/images/vocabulary/dinheiro.jpg"),
-    require("../assets/audios/vocabulary/dinheiro.mp3")
+    require("../assets/audios/vocabulary/dinheiro.wav")
   ),
   new Vocabulary(
-    75,
-    "ká’aye,ka’aríneti",
+    81,
     "ká’aye",
     "ka’aríneti",
     "Doente",
     "ka’aríneti",
     require("../assets/images/vocabulary/doente.jpg"),
-    require("../assets/audios/vocabulary/doente.mp3")
+    require("../assets/audios/vocabulary/doente.wav")
   ),
   new Vocabulary(
-    76,
-    "kîna,kipâe",
+    82,
+    "Pi`âti",
+    "Hó`openo",
+    "Dois, terça-feira",
+    "Pi`âti",
+    require("../assets/images/vocabulary/dois.jpg"),
+    require("../assets/audios/vocabulary/dois.wav")
+  ),
+  new Vocabulary(
+    83,
+    "Ndûse",
+    "Kotíveti",
+    "Doze",
+    "Ndûse",
+    require("../assets/images/vocabulary/doze.jpg"),
+    require("../assets/audios/vocabulary/doze.wav")
+  ),
+  new Vocabulary(
+    84,
     "kîna",
     "kipâe",
     "Ema",
     "kipâe",
     require("../assets/images/vocabulary/ema.jpg"),
-    require("../assets/audios/vocabulary/ema.mp3")
+    require("../assets/audios/vocabulary/ema.wav")
   ),
   new Vocabulary(
-    77,
-    "áha,áhara",
+    85,
+    "Tarapíxa",
+    "Enôe",
+    "Engenho",
+    "Tarapíxa",
+    require("../assets/images/vocabulary/engenho.jpg"),
+    require("../assets/audios/vocabulary/engenho.wav")
+  ),
+  new Vocabulary(
+    86,
     "áha",
     "áhara",
     "Enxada",
     "áhara",
     require("../assets/images/vocabulary/enxada.jpg"),
-    require("../assets/audios/vocabulary/enxada.mp3")
+    require("../assets/audios/vocabulary/enxada.wav")
   ),
   new Vocabulary(
-    78,
-    "Avékoti,âve",
+    87,
+    "Ihíkaxovokuti",
+    "Pêxou",
+    "Escola",
+    "Ihíkaxovokuti",
+    require("../assets/images/vocabulary/escola.jpg"),
+    require("../assets/audios/vocabulary/escola.wav")
+  ),
+  new Vocabulary(
+    88,
     "Avékoti",
     "âve",
     "Espinho",
     "âve",
     require("../assets/images/vocabulary/espinho.jpg"),
-    require("../assets/audios/vocabulary/espinho.mp3")
+    require("../assets/audios/vocabulary/espinho.wav")
   ),
   new Vocabulary(
-    79,
-    "Harîri,hékere",
+    89,
+    "Xêne",
+    "Yomômo",
+    "Estrada",
+    "Xêne",
+    require("../assets/images/vocabulary/estrada.jpg"),
+    require("../assets/audios/vocabulary/estrada.wav")
+  ),
+  new Vocabulary(
+    90,
     "Harîri",
     "hékere",
     "Estrela",
     "hékere",
     require("../assets/images/vocabulary/estrela.jpg"),
-    require("../assets/audios/vocabulary/estrela.mp3")
+    require("../assets/audios/vocabulary/estrela.wav")
   ),
   new Vocabulary(
-    80,
-    "Indína,ûndi",
+    91,
     "Indína",
     "ûndi",
     "Eu",
     "ûndi",
     require("../assets/images/vocabulary/eu.jpg"),
-    require("../assets/audios/vocabulary/eu.mp3")
+    require("../assets/audios/vocabulary/eu.wav")
   ),
   new Vocabulary(
-    81,
-    "Kiríka,pirítau",
+    92,
     "Kiríka",
     "pirítau",
     "Faca",
     "pirítau",
     require("../assets/images/vocabulary/faca.jpg"),
-    require("../assets/audios/vocabulary/faca.mp3")
+    require("../assets/audios/vocabulary/faca.wav")
   ),
   new Vocabulary(
-    82,
-    "ipuneti,ipunúpae",
+    93,
     "ipuneti",
     "ipunúpae",
     "Farinha de milho",
     "ipunúpae",
     require("../assets/images/vocabulary/farinhademilho.jpg"),
-    require("../assets/audios/vocabulary/farinhademilho.mp3")
+    require("../assets/audios/vocabulary/farinhademilho.wav")
   ),
   new Vocabulary(
-    83,
-    "Xupunu,râmoko",
+    94,
     "Xupunu",
     "râmoko",
     "Farinha",
     "râmoko",
     require("../assets/images/vocabulary/farinhamandioca.jpg"),
-    require("../assets/audios/vocabulary/farinhamandioca.mp3")
+    require("../assets/audios/vocabulary/farinhamandioca.wav")
   ),
   new Vocabulary(
-    84,
-    "Xêpau,pêxou",
+    95,
     "Xêpau",
     "pêxou",
     "Feijão",
     "pêxou",
     require("../assets/images/vocabulary/feijao.jpg"),
-    require("../assets/audios/vocabulary/feijao.mp3")
+    require("../assets/audios/vocabulary/feijao.wav")
   ),
   new Vocabulary(
-    85,
-    "hêve,hîu",
+    96,
+    "Koemaiti",
+    "Kuteâti",
+    "Feio",
+    "Koemaiti",
+    require("../assets/images/vocabulary/feio.jpg"),
+    require("../assets/audios/vocabulary/feio.wav")
+  ),
+  new Vocabulary(
+    97,
     "hêve",
     "hîu",
     "Flor (de árvores)",
     "hîu",
     require("../assets/images/vocabulary/flordearvore.jpg"),
-    require("../assets/audios/vocabulary/flordearvore.mp3")
+    require("../assets/audios/vocabulary/flordearvore.wav")
   ),
   new Vocabulary(
-    86,
-    "Ítukemea,itunoevoti",
+    98,
     "Ítukemea",
     "itunoevoti",
     "Flores (de jardim)",
     "itunoevoti",
     require("../assets/images/vocabulary/floresdejardim.jpg"),
-    require("../assets/audios/vocabulary/floresdejardim.mp3")
+    require("../assets/audios/vocabulary/floresdejardim.wav")
   ),
   new Vocabulary(
-    87,
-    "Yukílu,yúku",
+    99,
     "Yukílu",
     "yúku",
     "Fogo",
     "yúku",
     require("../assets/images/vocabulary/fogo.jpg"),
-    require("../assets/audios/vocabulary/fogo.mp3")
+    require("../assets/audios/vocabulary/fogo.wav")
   ),
   new Vocabulary(
-    88,
-    "ixuxúkoti,xopilokoti",
+    100,
     "ixuxúkoti",
     "xopilokoti",
     "Foice",
     "xopilokoti",
     require("../assets/images/vocabulary/foice.jpg"),
-    require("../assets/audios/vocabulary/foice.mp3")
+    require("../assets/audios/vocabulary/foice.wav")
   ),
   new Vocabulary(
-    89,
-    "Koseana,kosîu",
+    101,
     "Koseana",
     "kosîu",
     "Formiga",
     "kosîu",
     require("../assets/images/vocabulary/formiga.jpg"),
-    require("../assets/audios/vocabulary/formiga.mp3")
+    require("../assets/audios/vocabulary/formiga.wav")
   ),
   new Vocabulary(
-    90,
-    "irûti,iropoeti",
+    102,
+    "Xúnati",
+    "Po`ínu",
+    "Forte",
+    "Xúnati",
+    require("../assets/images/vocabulary/forte.jpg"),
+    require("../assets/audios/vocabulary/forte.wav")
+  ),
+  new Vocabulary(
+    103,
     "irûti",
     "iropoeti",
     "Frito",
     "iropoeti",
     require("../assets/images/vocabulary/frito.jpg"),
-    require("../assets/audios/vocabulary/frito.mp3")
+    require("../assets/audios/vocabulary/frito.wav")
   ),
   new Vocabulary(
-    91,
-    "Kurikoti,kuríhoe",
+    104,
+    "Ha`i nonéti",
+    "Hopú`iti",
+    "Fruta",
+    "Ha`i nonéti",
+    require("../assets/images/vocabulary/fruta.jpg"),
+    require("../assets/audios/vocabulary/fruta.wav")
+  ),
+  new Vocabulary(
+    105,
     "Kurikoti",
     "kuríhoe",
     "Fumaca",
     "kuríhoe",
     require("../assets/images/vocabulary/fumaca.jpg"),
-    require("../assets/audios/vocabulary/fumaca.mp3")
+    require("../assets/audios/vocabulary/fumaca.wav")
   ),
   new Vocabulary(
-    92,
-    "Xorexo,tapî’i",
+    106,
     "Xorexo",
     "tapî’i",
     "Galinha",
     "tapî’i",
     require("../assets/images/vocabulary/galinha.jpg"),
-    require("../assets/audios/vocabulary/galinha.mp3")
+    require("../assets/audios/vocabulary/galinha.wav")
   ),
   new Vocabulary(
-    93,
-    "tapî’i,nûtava",
+    107,
     "tapî’i",
     "nûtava",
     "Galo",
     "nûtava",
     require("../assets/images/vocabulary/galo.jpg"),
-    require("../assets/audios/vocabulary/galo.mp3")
+    require("../assets/audios/vocabulary/galo.wav")
   ),
   new Vocabulary(
-    94,
-    "váhere,vorîri",
+    108,
+    "Karapa",
+    "Xe`exa tapî`i",
+    "Garrafa",
+    "Karapa",
+    require("../assets/images/vocabulary/garrafa.jpg"),
+    require("../assets/audios/vocabulary/garrafa.wav")
+  ),
+  new Vocabulary(
+    109,
+    "Yuhumúkopeti",
+    "Njáneru",
+    "Garfo",
+    "Yuhumúkopeti",
+    require("../assets/images/vocabulary/garfo.jpg"),
+    require("../assets/audios/vocabulary/garfo.wav")
+  ),
+  new Vocabulary(
+    110,
     "váhere",
     "vorîri",
     "Garoa",
     "vorîri",
     require("../assets/images/vocabulary/garoa.jpg"),
-    require("../assets/audios/vocabulary/garoa.mp3")
+    require("../assets/audios/vocabulary/garoa.wav")
   ),
   new Vocabulary(
-    95,
-    "marâo,marakáya",
-    "marâo",
+    111,
+    "po`ínu",
     "marakáya",
     "Gato",
     "marakáya",
     require("../assets/images/vocabulary/gato.jpg"),
-    require("../assets/audios/vocabulary/gato.mp3")
+    require("../assets/audios/vocabulary/gato.wav")
   ),
   new Vocabulary(
-    96,
-    "Áhara,arâha",
+    112,
     "Áhara",
     "arâha",
     "Goiaba",
     "arâha",
     require("../assets/images/vocabulary/goiaba.jpg"),
-    require("../assets/audios/vocabulary/goiaba.mp3")
+    require("../assets/audios/vocabulary/goiaba.wav")
   ),
   new Vocabulary(
-    97,
-    "Kitáiti,kínati",
+    113,
     "Kitáiti",
     "kínati",
     "Gordo(a)",
     "kínati",
     require("../assets/images/vocabulary/gordo.jpg"),
-    require("../assets/audios/vocabulary/gordo.mp3")
+    require("../assets/audios/vocabulary/gordo.wav")
   ),
   new Vocabulary(
-    98,
-    "Evésekea,evêke",
+    114,
     "Evésekea",
     "evêke",
     "Granizo",
     "evêke",
     require("../assets/images/vocabulary/granizo.jpg"),
-    require("../assets/audios/vocabulary/granizo.mp3")
+    require("../assets/audios/vocabulary/granizo.wav")
   ),
   new Vocabulary(
-    99,
-    "Xêki,xelêke",
+    115,
     "Xêki",
     "xelêke",
     "Graveto",
     "xelêke",
     require("../assets/images/vocabulary/graveto.jpg"),
-    require("../assets/audios/vocabulary/graveto.mp3")
+    require("../assets/audios/vocabulary/graveto.wav")
   ),
   new Vocabulary(
-    100,
-    "vésa,vísi",
+    116,
     "vésa",
     "vísi",
     "Grilo",
     "vísi",
     require("../assets/images/vocabulary/grilo.jpg"),
-    require("../assets/audios/vocabulary/grilo.mp3")
+    require("../assets/audios/vocabulary/grilo.wav")
   ),
   new Vocabulary(
-    101,
-    "Purúsoti,pú’iti",
+    117,
     "Purúsoti",
     "pú’iti",
     "Grosso",
     "Purúsoti",
     require("../assets/images/vocabulary/grosso.jpg"),
-    require("../assets/audios/vocabulary/grosso.mp3")
+    require("../assets/audios/vocabulary/grosso.wav")
   ),
   new Vocabulary(
-    102,
-    "Kínati,kipâhi",
+    118,
     "Kínati",
     "kipâhi",
-    "Guardachuva",
+    "Guarda chuva",
     "kipâhi",
     require("../assets/images/vocabulary/guardachuva.jpg"),
-    require("../assets/audios/vocabulary/guardachuva.mp3")
+    require("../assets/audios/vocabulary/guardachuva.wav")
   ),
   new Vocabulary(
-    103,
-    "ho’openo,hoyeno",
+    119,
     "ho’openo",
     "hoyeno",
     "Homem",
     "hoyeno",
     require("../assets/images/vocabulary/homem.jpg"),
-    require("../assets/audios/vocabulary/homem.mp3")
+    require("../assets/audios/vocabulary/homem.wav")
   ),
   new Vocabulary(
-    104,
-    "nêne,même",
+    120,
+    "Imokóvokuti",
+    "Têrenoe",
+    "Igreja",
+    "Imokóvokuti",
+    require("../assets/images/vocabulary/igreja.jpg"),
+    require("../assets/audios/vocabulary/igreja.wav")
+  ),
+  new Vocabulary(
+    121,
     "nêne",
     "même",
     "Idosa",
     "même",
     require("../assets/images/vocabulary/idosa.jpg"),
-    require("../assets/audios/vocabulary/idosa.mp3")
+    require("../assets/audios/vocabulary/idosa.wav")
   ),
   new Vocabulary(
-    105,
-    "lêle,lûlu",
+    122,
     "lêle",
     "lûlu",
     "Idoso",
     "lûlu",
     require("../assets/images/vocabulary/idoso.jpg"),
-    require("../assets/audios/vocabulary/idoso.mp3")
+    require("../assets/audios/vocabulary/idoso.wav")
   ),
   new Vocabulary(
-    106,
-    "ovoku,ovoe",
+    123,
+    "Kopénoti",
+    "Itíveti",
+    "Indígena",
+    "Kopénoti",
+    require("../assets/images/vocabulary/indigena.jpg"),
+    require("../assets/audios/vocabulary/indigena.wav")
+  ),
+  new Vocabulary(
+    124,
     "ovoku",
     "ovoe",
     "Jabuti",
     "ovoe",
     require("../assets/images/vocabulary/jabuti.jpg"),
-    require("../assets/audios/vocabulary/jabuti.mp3")
+    require("../assets/audios/vocabulary/jabuti.wav")
   ),
   new Vocabulary(
-    107,
-    "Vatéke,vétekeke",
+    125,
     "Vatéke",
     "vétekeke",
     "Jacaré",
     "vétekeke",
     require("../assets/images/vocabulary/jacare.jpg"),
-    require("../assets/audios/vocabulary/jacare.mp3")
+    require("../assets/audios/vocabulary/jacare.wav")
   ),
   new Vocabulary(
-    108,
-    "môko,mokohoe",
+    126,
     "môko",
     "mokohoe",
     "jao",
     "mokohoe",
     require("../assets/images/vocabulary/jao.jpg"),
-    require("../assets/audios/vocabulary/jao.mp3")
+    require("../assets/audios/vocabulary/jao.wav")
   ),
   new Vocabulary(
-    109,
-    "Xûruno,xukûyo",
+    127,
     "Xûruno",
     "xukûyo",
-    "Joãodebarro",
+    "João de barro",
     "xukûyo",
     require("../assets/images/vocabulary/joaodebarro.jpg"),
-    require("../assets/audios/vocabulary/joaodebarro.mp3")
+    require("../assets/audios/vocabulary/joaodebarro.wav")
   ),
   new Vocabulary(
-    110,
-    "Sêno,sêmu",
+    128,
     "Sêno",
     "sêmu",
     "Lagartixa",
     "sêmu",
     require("../assets/images/vocabulary/lagartixa.jpg"),
-    require("../assets/audios/vocabulary/largatixa.mp3")
+    require("../assets/audios/vocabulary/largatixa.wav")
   ),
   new Vocabulary(
-    111,
-    "yonúko,yunâe",
+    129,
     "yonúko",
     "yunâe",
     "Lagarto",
     "yunâe",
     require("../assets/images/vocabulary/lagarto.jpg"),
-    require("../assets/audios/vocabulary/lagarto.mp3")
+    require("../assets/audios/vocabulary/lagarto.wav")
   ),
   new Vocabulary(
-    112,
-    "Leôva,lâvona",
+    130,
     "Leôva",
     "lâvona",
     "Lago",
     "lâvona",
     require("../assets/images/vocabulary/lago.jpg"),
-    require("../assets/audios/vocabulary/lago.mp3")
+    require("../assets/audios/vocabulary/lago.wav")
   ),
   new Vocabulary(
-    113,
-    "naníka,nâranga",
+    131,
     "naníka",
     "nâranga",
     "Laranja",
     "nâranga",
     require("../assets/images/vocabulary/laranja.jpg"),
-    require("../assets/audios/vocabulary/laranja.mp3")
+    require("../assets/audios/vocabulary/laranja.wav")
   ),
   new Vocabulary(
-    114,
-    "Nûnu,nêne",
+    132,
     "Nûnu",
     "nêne",
     "Língua",
     "nêne",
     require("../assets/images/vocabulary/lingua.jpg"),
-    require("../assets/audios/vocabulary/lingua.mp3")
+    require("../assets/audios/vocabulary/lingua.wav")
   ),
   new Vocabulary(
-    115,
-    "Úko,úkoe",
+    133,
     "Úko",
     "úkoe",
     "Lobinho",
     "úkoe",
     require("../assets/images/vocabulary/lobinho.jpg"),
-    require("../assets/audios/vocabulary/lobinho.mp3")
+    require("../assets/audios/vocabulary/lobinho.wav")
   ),
   new Vocabulary(
-    116,
-    "Hôe,kohê",
+    134,
     "Hôe",
     "kohê",
     "Lua",
     "kohê",
     require("../assets/images/vocabulary/lua.jpg"),
-    require("../assets/audios/vocabulary/lua.mp3")
+    require("../assets/audios/vocabulary/lua.wav")
   ),
   new Vocabulary(
-    117,
-    "Parâva,paravo’uti",
+    135,
     "Parâva",
     "paravo’uti",
     "Luva",
     "paravo’uti",
     require("../assets/images/vocabulary/luva.jpg"),
-    require("../assets/audios/vocabulary/luva.mp3")
+    require("../assets/audios/vocabulary/luva.wav")
   ),
   new Vocabulary(
-    118,
-    "Kâke,kâ’i",
+    136,
     "Kâke",
     "kâ’i",
     "Macaco",
     "kâ’i",
     require("../assets/images/vocabulary/macaco.jpg"),
-    require("../assets/audios/vocabulary/macaco.mp3")
+    require("../assets/audios/vocabulary/macaco.wav")
   ),
   new Vocabulary(
-    119,
-    "Poréxoti,povôti",
+    137,
     "Poréxoti",
     "povôti",
     "Machado",
     "povôti",
     require("../assets/images/vocabulary/machado.jpg"),
-    require("../assets/audios/vocabulary/machado.mp3")
+    require("../assets/audios/vocabulary/machado.wav")
   ),
   new Vocabulary(
-    120,
-    "yuvoriti,upôriti",
+    138,
     "yuvoriti",
     "upôriti",
     "Magro(a)",
     "upôriti",
     require("../assets/images/vocabulary/magro.jpg"),
-    require("../assets/audios/vocabulary/magro.mp3")
+    require("../assets/audios/vocabulary/magro.wav")
   ),
   new Vocabulary(
-    121,
-    "Kanáuti,karáraunati",
+    139,
     "Kanáuti",
     "karáraunati",
     "Mamão macho",
     "karáraunati",
     require("../assets/images/vocabulary/mamaomacho.jpg"),
-    require("../assets/audios/vocabulary/mamaomacho.mp3")
+    require("../assets/audios/vocabulary/mamaomacho.wav")
   ),
   new Vocabulary(
-    122,
-    "xupunu,xúpu",
+    140,
     "xupunu",
     "xúpu",
     "Mandioca",
     "xúpu",
     require("../assets/images/vocabulary/mandioca.jpg"),
-    require("../assets/audios/vocabulary/mandioca.mp3")
+    require("../assets/audios/vocabulary/mandioca.wav")
   ),
   new Vocabulary(
-    123,
-    "kâmo,háne",
+    141,
     "kâmo",
     "háne",
     "Marimbondo",
     "háne",
     require("../assets/images/vocabulary/marimbondo.jpg"),
-    require("../assets/audios/vocabulary/marimbondo.mp3")
+    require("../assets/audios/vocabulary/marimbondo.wav")
   ),
   new Vocabulary(
-    124,
-    "môko,mopo",
+    142,
+    "Hôi",
+    "Homomó`iti",
+    "Mato",
+    "Hôi",
+    require("../assets/images/vocabulary/mato.jpg"),
+    require("../assets/audios/vocabulary/mato.wav")
+  ),
+  new Vocabulary(
+    143,
     "môko",
     "mopo",
     "Mel",
     "mopo",
     require("../assets/images/vocabulary/mel.jpg"),
-    require("../assets/audios/vocabulary/mel.mp3")
+    require("../assets/audios/vocabulary/mel.wav")
   ),
   new Vocabulary(
-    125,
-    "Nikokonoti,mêlatu",
+    144,
     "Nikokonoti",
     "mêlatu",
     "Melado",
     "mêlatu",
     require("../assets/images/vocabulary/melado.jpg"),
-    require("../assets/audios/vocabulary/melado.mp3")
+    require("../assets/audios/vocabulary/melado.wav")
   ),
   new Vocabulary(
-    126,
-    "hurâe,hándea",
+    145,
     "hurâe",
     "hándea",
     "Melancia",
     "hándea",
     require("../assets/images/vocabulary/melancia.jpg"),
-    require("../assets/audios/vocabulary/melancia.mp3")
+    require("../assets/audios/vocabulary/melancia.wav")
   ),
   new Vocabulary(
-    127,
-    "Senoyakalivono,sêno",
+    146,
     "Senoyakalivono",
     "sêno",
     "Menina",
     "sêno",
     require("../assets/images/vocabulary/menina.jpg"),
-    require("../assets/audios/vocabulary/menina.mp3")
+    require("../assets/audios/vocabulary/menina.wav")
   ),
   new Vocabulary(
-    128,
-    "hômo,hoyenokalivono",
+    147,
     "hômo",
     "hoyenokalivono",
     "Menino",
     "hoyenokalivono",
     require("../assets/images/vocabulary/menino.jpg"),
-    require("../assets/audios/vocabulary/menino.mp3")
+    require("../assets/audios/vocabulary/menino.wav")
   ),
   new Vocabulary(
-    129,
-    "su’uso,sopôro",
+    148,
     "su’uso",
     "sopôro",
     "Milho",
     "sopôro",
     require("../assets/images/vocabulary/milho.jpg"),
-    require("../assets/audios/vocabulary/milho.mp3")
+    require("../assets/audios/vocabulary/milho.wav")
   ),
   new Vocabulary(
-    130,
-    "Arûmo,ârunoe",
+    149,
     "Arûmo",
     "ârunoe",
-    "Moca",
+    "Moça",
     "ârunoe",
     require("../assets/images/vocabulary/moca.jpg"),
-    require("../assets/audios/vocabulary/moca.mp3")
+    require("../assets/audios/vocabulary/moca.wav")
   ),
   new Vocabulary(
-    131,
-    "Nikírihiko,níkiri",
+    150,
     "Nikírihiko",
     "níkiri",
     "Moeda",
     "níkiri",
     require("../assets/images/vocabulary/moedas.jpg"),
-    require("../assets/audios/vocabulary/moeda.mp3")
+    require("../assets/audios/vocabulary/moeda.wav")
   ),
   new Vocabulary(
-    132,
-    "Môko,mô’im",
+    151,
     "Môko",
     "mô’im",
     "Morango",
     "mô’im",
     require("../assets/images/vocabulary/morango.jpg"),
-    require("../assets/audios/vocabulary/morango.mp3")
+    require("../assets/audios/vocabulary/morango.wav")
   ),
   new Vocabulary(
-    133,
-    "kêvi,kêhi",
+    152,
     "kêvi",
     "kêhi",
     "Mosca",
     "kêhi",
     require("../assets/images/vocabulary/mosca.jpg"),
-    require("../assets/audios/vocabulary/mosca.mp3")
+    require("../assets/audios/vocabulary/mosca.wav")
   ),
   new Vocabulary(
-    134,
-    "nîka,nîyum",
+    153,
     "nîka",
     "nîyum",
     "Mosquito",
     "nîyum",
     require("../assets/images/vocabulary/mosquito.jpg"),
-    require("../assets/audios/vocabulary/mosquito.mp3")
+    require("../assets/audios/vocabulary/mosquito.wav")
   ),
   new Vocabulary(
-    135,
-    "Senôko,sêno",
+    154,
     "Senôko",
     "sêno",
     "Mulher",
     "sêno",
     require("../assets/images/vocabulary/mulher.jpg"),
-    require("../assets/audios/vocabulary/mulher.mp3")
+    require("../assets/audios/vocabulary/mulher.wav")
   ),
   new Vocabulary(
-    136,
-    "ârami,aramúku",
+    155,
+    "Mêum",
+    "Xurêre",
+    "Mundo ou campo",
+    "Mêum",
+    require("../assets/images/vocabulary/mundo.jpg"),
+    require("../assets/audios/vocabulary/mundo.wav")
+  ),
+  new Vocabulary(
+    156,
     "ârami",
     "aramúku",
     "Mutuca",
     "aramúku",
     require("../assets/images/vocabulary/mutuca.jpg"),
-    require("../assets/audios/vocabulary/mutuca.mp3")
+    require("../assets/audios/vocabulary/mutuca.wav")
   ),
   new Vocabulary(
-    137,
-    "kûre,kîri",
+    157,
     "kûre",
     "kîri",
     "Nariz",
     "kîri",
     require("../assets/images/vocabulary/nariz.jpg"),
-    require("../assets/audios/vocabulary/nariz.mp3")
+    require("../assets/audios/vocabulary/nariz.wav")
   ),
   new Vocabulary(
-    138,
-    "araukoti,ámori",
+    158,
     "araukoti",
     "ámori",
     "Neto(a)",
     "ámori",
     require("../assets/images/vocabulary/neto.jpg"),
-    require("../assets/audios/vocabulary/neto.mp3")
+    require("../assets/audios/vocabulary/neto.wav")
   ),
   new Vocabulary(
-    139,
-    "iyôti,Yoti",
+    159,
     "iyôti",
     "Yoti",
     "Noite",
     "Yoti",
     require("../assets/images/vocabulary/noite.jpg"),
-    require("../assets/audios/vocabulary/noite.mp3")
+    require("../assets/audios/vocabulary/noite.wav")
   ),
   new Vocabulary(
-    140,
-    "Îti,ûti",
+    160,
     "Îti",
     "ûti",
-    "Nos",
+    "Nós",
     "ûti",
     require("../assets/images/vocabulary/nos.jpg"),
-    require("../assets/audios/vocabulary/nos.mp3")
+    require("../assets/audios/vocabulary/nos.wav")
   ),
   new Vocabulary(
-    141,
-    "Hopukúiti,hopúoti",
+    161,
+    "Itukévoketi",
+    "Póhuti",
+    "Objeto",
+    "Itukévoketi",
+    require("../assets/images/vocabulary/objeto.jpg"),
+    require("../assets/audios/vocabulary/objeto.wav")
+  ),
+  new Vocabulary(
+    162,
+    "Úkulu",
+    "Karapa",
+    "Óculos",
+    "Úkulu",
+    require("../assets/images/vocabulary/oculos.jpg"),
+    require("../assets/audios/vocabulary/oculos.wav")
+  ),
+  new Vocabulary(
+    163,
+    "Ukêti",
+    "Kuteâti",
+    "Olho",
+    "Ukêti",
+    require("../assets/images/vocabulary/olho.jpg"),
+    require("../assets/audios/vocabulary/olho.wav")
+  ),
+  new Vocabulary(
+    164,
     "Hopukúiti",
     "hopúoti",
     "Onca parda",
     "hopúoti",
     require("../assets/images/vocabulary/oncaparda.jpg"),
-    require("../assets/audios/vocabulary/oncaparda.mp3")
+    require("../assets/audios/vocabulary/oncaparda.wav")
   ),
   new Vocabulary(
-    142,
-    "sêne,sîni",
+    165,
     "sêne",
     "sîni",
     "Onca",
     "sîni",
     require("../assets/images/vocabulary/onca.jpg"),
-    require("../assets/audios/vocabulary/onca.mp3")
+    require("../assets/audios/vocabulary/onca.wav")
   ),
   new Vocabulary(
-    143,
-    "Kêvo,kêno",
+    166,
+    "Unze",
+    "Kopénoti",
+    "Onze",
+    "Unze",
+    require("../assets/images/vocabulary/onze.jpg"),
+    require("../assets/audios/vocabulary/onze.wav")
+  ),
+  new Vocabulary(
+    167,
     "Kêvo",
     "kêno",
     "Orelha",
     "kêno",
     require("../assets/images/vocabulary/orelha.jpg"),
-    require("../assets/audios/vocabulary/orelha.mp3")
+    require("../assets/audios/vocabulary/orelha.wav")
   ),
   new Vocabulary(
-    144,
-    "opíxerere,opêti",
+    168,
     "opíxerere",
     "opêti",
     "Osso",
     "opêti",
     require("../assets/images/vocabulary/ossos.jpg"),
-    require("../assets/audios/vocabulary/osso.mp3")
+    require("../assets/audios/vocabulary/osso.wav")
   ),
   new Vocabulary(
-    145,
-    "Nikíneti,nikitíniki",
+    169,
+    "Xe`exa tapî`i",
+    "Kuteâti",
+    "Ovo",
+    "Xe`exa tapî`i",
+    require("../assets/images/vocabulary/ovo.jpg"),
+    require("../assets/audios/vocabulary/ovo.wav")
+  ),
+  new Vocabulary(
+    170,
     "Nikíneti",
     "nikitíniki",
     "Paka",
     "nikitíniki",
     require("../assets/images/vocabulary/paca.jpg"),
-    require("../assets/audios/vocabulary/paca.mp3")
+    require("../assets/audios/vocabulary/paca.wav")
   ),
   new Vocabulary(
-    146,
-    "mo’okoti,momô’on",
+    171,
     "mo’okoti",
     "momô’on",
     "Palmito",
     "momô’on",
     require("../assets/images/vocabulary/palmito.jpg"),
-    require("../assets/audios/vocabulary/palmito.mp3")
+    require("../assets/audios/vocabulary/palmito.wav")
   ),
   new Vocabulary(
-    147,
-    "yukuna,yúkui",
+    172,
     "yukuna",
     "yúkui",
     "Pamonha",
     "yúkui",
     require("../assets/images/vocabulary/pamonha.jpg"),
-    require("../assets/audios/vocabulary/pamonha.mp3")
+    require("../assets/audios/vocabulary/pamonha.wav")
   ),
   new Vocabulary(
-    148,
-    "Xûru,xûruno",
+    173,
     "Xûru",
     "xûruno",
     "Panela",
     "xûruno",
     require("../assets/images/vocabulary/panela.jpg"),
-    require("../assets/audios/vocabulary/panela.mp3")
+    require("../assets/audios/vocabulary/panela.wav")
   ),
   new Vocabulary(
-    149,
-    "Koexu,ko’êru",
+    174,
+    "Váhere",
+    "Ha`i nonéti",
+    "Pano, ruim",
+    "Váhere",
+    require("../assets/images/vocabulary/pano.jpg"),
+    require("../assets/audios/vocabulary/pano.wav")
+  ),
+  new Vocabulary(
+    175,
     "Koexu",
     "ko’êru",
     "Papagaio",
     "ko’êru",
     require("../assets/images/vocabulary/papagaio.jpg"),
-    require("../assets/audios/vocabulary/papagaio.mp3")
+    require("../assets/audios/vocabulary/papagaio.wav")
   ),
   new Vocabulary(
-    150,
-    "pâho,pôhi",
+    176,
     "pâho",
     "pôhi",
     "Pato",
     "pôhi",
     require("../assets/images/vocabulary/pato.jpg"),
-    require("../assets/audios/vocabulary/pato.mp3")
+    require("../assets/audios/vocabulary/pato.wav")
   ),
   new Vocabulary(
-    151,
-    "mopo,mopôi",
+    177,
+    "Hevêti",
+    "Póhuti",
+    "Pé de animal",
+    "Hevêti",
+    require("../assets/images/vocabulary/pe.jpg"),
+    require("../assets/audios/vocabulary/pe.wav")
+  ),
+  new Vocabulary(
+    178,
     "mopo",
     "mopôi",
     "Pedra",
     "mopôi",
     require("../assets/images/vocabulary/pedra.jpg"),
-    require("../assets/audios/vocabulary/pedra.mp3")
+    require("../assets/audios/vocabulary/pedra.wav")
   ),
   new Vocabulary(
-    152,
-    "Hoêti,hôe",
+    179,
     "Hoêti",
     "hôe",
     "Peixe",
     "hôe",
     require("../assets/images/vocabulary/peixe.jpg"),
-    require("../assets/audios/vocabulary/peixe.mp3")
+    require("../assets/audios/vocabulary/peixe.wav")
   ),
   new Vocabulary(
-    153,
-    "movoiti,moveati",
+    180,
     "movoiti",
     "moveati",
     "Pente",
     "moveati",
     require("../assets/images/vocabulary/pente.jpg"),
-    require("../assets/audios/vocabulary/pente.mp3")
+    require("../assets/audios/vocabulary/pente.wav")
   ),
   new Vocabulary(
-    154,
-    "Varatútu,verékeke",
+    181,
     "Varatútu",
     "verékeke",
     "Perereca",
     "verékeke",
     require("../assets/images/vocabulary/perereca.jpg"),
-    require("../assets/audios/vocabulary/perereca.mp3")
+    require("../assets/audios/vocabulary/perereca.wav")
   ),
   new Vocabulary(
-    155,
-    "kirîu,kilí-kili",
+    182,
     "kirîu",
     "kilí-kili",
     "Periquito",
     "kilí-kili",
-    require("../assets/images/vocabulary/piriquito.jpg"),
-    require("../assets/audios/vocabulary/piriquito.mp3")
+    require("../assets/images/vocabulary/periquito.jpg"),
+    require("../assets/audios/vocabulary/periquito.wav")
   ),
   new Vocabulary(
-    156,
-    "Yúku,yûxu",
+    183,
     "Yúku",
     "yûxu",
     "Pilão",
     "yûxu",
     require("../assets/images/vocabulary/pilao.jpg"),
-    require("../assets/audios/vocabulary/pilao.mp3")
+    require("../assets/audios/vocabulary/pilao.wav")
   ),
   new Vocabulary(
-    157,
-    "Têtu,têti",
+    184,
     "Têtu",
     "têti",
     "Pimenta",
     "têti",
     require("../assets/images/vocabulary/pimenta.jpg"),
-    require("../assets/audios/vocabulary/pimenta.mp3")
+    require("../assets/audios/vocabulary/pimenta.wav")
   ),
   new Vocabulary(
-    158,
-    "kúmandu,kumá’a",
+    185,
     "kúmandu",
     "kumá’a",
     "Pinga",
     "kumá’a",
     require("../assets/images/vocabulary/pinga.jpg"),
-    require("../assets/audios/vocabulary/pinga.mp3")
+    require("../assets/audios/vocabulary/pinga.wav")
   ),
   new Vocabulary(
-    159,
-    "No’okoati,nonéti",
+    186,
     "No’okoati",
     "nonéti",
     "Plantas",
     "nonéti",
     require("../assets/images/vocabulary/plantas.jpg"),
-    require("../assets/audios/vocabulary/plantas.mp3")
+    require("../assets/audios/vocabulary/plantas.wav")
   ),
   new Vocabulary(
-    160,
-    "Nikôti,ikokuti",
+    187,
     "Nikôti",
     "ikokuti",
     "Poco",
     "ikokuti",
     require("../assets/images/vocabulary/poco.jpg"),
-    require("../assets/audios/vocabulary/poco.mp3")
+    require("../assets/audios/vocabulary/poco.wav")
   ),
   new Vocabulary(
-    161,
-    "nône,nûnu",
+    188,
     "nône",
     "nûnu",
     "Pomba",
     "nûnu",
     require("../assets/images/vocabulary/pomba.jpg"),
-    require("../assets/audios/vocabulary/pomba.mp3")
+    require("../assets/audios/vocabulary/pomba.wav")
   ),
   new Vocabulary(
-    162,
-    "Kurîke,kurûte",
+    189,
     "Kurîke",
     "kurûte",
     "Pombo",
     "kurûte",
     require("../assets/images/vocabulary/pomba.jpg"),
-    require("../assets/audios/vocabulary/pombo.mp3")
+    require("../assets/audios/vocabulary/pombo.wav")
   ),
   new Vocabulary(
-    163,
-    "Kîri,kûre",
+    190,
     "Kîri",
     "kûre",
     "Porco",
     "kûre",
     require("../assets/images/vocabulary/porco.jpg"),
-    require("../assets/audios/vocabulary/porco.mp3")
+    require("../assets/audios/vocabulary/porco.wav")
   ),
   new Vocabulary(
-    164,
-    "pahoeti,pahapéti",
+    191,
     "pahoeti",
     "pahapéti",
     "Porta",
     "pahapéti",
     require("../assets/images/vocabulary/porta.jpg"),
-    require("../assets/audios/vocabulary/porta.mp3")
+    require("../assets/audios/vocabulary/porta.wav")
   ),
   new Vocabulary(
-    165,
-    "Úko,ûto",
+    192,
     "Úko",
     "ûto",
     "Prato",
     "ûto",
     require("../assets/images/vocabulary/prato.jpg"),
-    require("../assets/audios/vocabulary/prato.mp3")
+    require("../assets/audios/vocabulary/prato.wav")
   ),
   new Vocabulary(
-    166,
-    "mutatá,muyúkutaka",
+    193,
     "mutatá",
     "muyúkutaka",
     "Preá",
     "muyúkutaka",
     require("../assets/images/vocabulary/prea.jpg"),
-    require("../assets/audios/vocabulary/prea.mp3")
+    require("../assets/audios/vocabulary/prea.wav")
   ),
   new Vocabulary(
-    167,
-    "Pepêke,perêku",
+    194,
     "Pepêke",
     "perêku",
     "Prego",
     "perêku",
     require("../assets/images/vocabulary/prego.jpg"),
-    require("../assets/audios/vocabulary/prego.mp3")
+    require("../assets/audios/vocabulary/prego.wav")
   ),
   new Vocabulary(
-    168,
-    "hononoiti,honovouti",
+    195,
+    "Iparáti",
+    "Hôi",
+    "Prêmio",
+    "Iparáti",
+    require("../assets/images/vocabulary/premio.jpg"),
+    require("../assets/audios/vocabulary/premio.wav")
+  ),
+  new Vocabulary(
+    196,
     "hononoiti",
     "honovouti",
     "Pulseira",
     "honovouti",
     require("../assets/images/vocabulary/pulseira.jpg"),
-    require("../assets/audios/vocabulary/pulseira.mp3")
+    require("../assets/audios/vocabulary/pulseira.wav")
   ),
   new Vocabulary(
-    169,
-    "Kêno,kéhu",
+    197,
+    "Mopo`âti",
+    "Póhuti",
+    "Quarta-feira, três",
+    "Mopo`âti",
+    require("../assets/images/vocabulary/quarta.jpg"),
+    require("../assets/audios/vocabulary/quarta.wav")
+  ),
+  new Vocabulary(
+    198,
     "Kêno",
     "kéhu",
     "Queijo",
     "kéhu",
     require("../assets/images/vocabulary/queijo.jpg"),
-    require("../assets/audios/vocabulary/queijo.mp3")
+    require("../assets/audios/vocabulary/queijo.wav")
   ),
   new Vocabulary(
-    170,
-    "ásurupi,axúka",
+    199,
+    "Xupukóxei",
+    "Mopo`âti",
+    "Rama",
+    "Xupukóxei",
+    require("../assets/images/vocabulary/rama.jpg"),
+    require("../assets/audios/vocabulary/rama.wav")
+  ),
+  new Vocabulary(
+    200,
     "ásurupi",
     "axúka",
     "Rapadura",
     "axúka",
     require("../assets/images/vocabulary/rapadura.jpg"),
-    require("../assets/audios/vocabulary/rapadura.mp3")
+    require("../assets/audios/vocabulary/rapadura.wav")
   ),
   new Vocabulary(
-    171,
-    "honôe,homoêhou",
+    201,
     "honôe",
     "homoêhou",
     "Rapaz",
     "homoêhou",
     require("../assets/images/vocabulary/rapaz.jpg"),
-    require("../assets/audios/vocabulary/rapaz.mp3")
+    require("../assets/audios/vocabulary/rapaz.wav")
   ),
   new Vocabulary(
-    172,
-    "Ôro,ôho",
+    202,
     "Ôro",
     "ôho",
     "Rato",
     "ôho",
     require("../assets/images/vocabulary/rato.jpg"),
-    require("../assets/audios/vocabulary/rato.mp3")
+    require("../assets/audios/vocabulary/rato.wav")
   ),
   new Vocabulary(
-    173,
-    "tunúku,tûiti",
+    203,
     "tunúku",
     "tûiti",
     "Rede",
     "tûiti",
     require("../assets/images/vocabulary/rede.jpg"),
-    require("../assets/audios/vocabulary/rede.mp3")
+    require("../assets/audios/vocabulary/rede.wav")
   ),
   new Vocabulary(
-    174,
-    "ipixáti,ipixéneneoti",
+    204,
     "ipixáti",
     "ipixéneneoti",
     "Relâmpago",
     "ipixéneneoti",
     require("../assets/images/vocabulary/relampago.jpg"),
-    require("../assets/audios/vocabulary/relampago.mp3")
+    require("../assets/audios/vocabulary/relampago.wav")
   ),
   new Vocabulary(
-    175,
-    "hunôti,huvêo",
+    205,
     "hunôti",
     "huvêo",
     "Rio",
     "huvêo",
     require("../assets/images/vocabulary/rio.jpg"),
-    require("../assets/audios/vocabulary/rio.mp3")
+    require("../assets/audios/vocabulary/rio.wav")
   ),
   new Vocabulary(
-    176,
-    "Kirîti,kirîu",
+    206,
+    "Kavâne",
+    "Hevêti",
+    "Roça",
+    "Kavâne",
+    require("../assets/images/vocabulary/roca.jpg"),
+    require("../assets/audios/vocabulary/roca.wav")
+  ),
+  new Vocabulary(
+    207,
     "Kirîti",
     "kirîu",
     "Rolinha",
     "kirîu",
     require("../assets/images/vocabulary/rolinha.jpg"),
-    require("../assets/audios/vocabulary/rolinha.mp3")
+    require("../assets/audios/vocabulary/rolinha.wav")
   ),
   new Vocabulary(
-    177,
-    "kêvo,kâvo",
+    208,
     "kêvo",
     "kâvo",
     "Sabão",
     "kâvo",
     require("../assets/images/vocabulary/sabao.jpg"),
-    require("../assets/audios/vocabulary/sabao.mp3")
+    require("../assets/audios/vocabulary/sabao.wav")
   ),
   new Vocabulary(
-    178,
-    "Xoere,xorêxo",
+    209,
     "Xoere",
     "xorêxo",
     "Sabiá",
     "xorêxo",
     require("../assets/images/vocabulary/sabia.jpg"),
-    require("../assets/audios/vocabulary/sabia.mp3")
+    require("../assets/audios/vocabulary/sabia.wav")
   ),
   new Vocabulary(
-    179,
-    "ítike,íti",
+    210,
     "ítike",
     "íti",
     "Sangue",
     "íti",
     require("../assets/images/vocabulary/sangue.jpg"),
-    require("../assets/audios/vocabulary/sangue.mp3")
+    require("../assets/audios/vocabulary/sangue.wav")
   ),
   new Vocabulary(
-    180,
-    "Ho’openo,hovôvo",
+    211,
+    "Hapâtu",
+    "Mopo`âti",
+    "Sapato",
+    "Hapâtu",
+    require("../assets/images/vocabulary/sapato.jpg"),
+    require("../assets/audios/vocabulary/sapato.wav")
+  ),
+  new Vocabulary(
+    212,
+    "Hí`e",
+    "Hapâtu",
+    "Sapé",
+    "Hí`e",
+    require("../assets/images/vocabulary/sape.jpg"),
+    require("../assets/audios/vocabulary/sape.wav")
+  ),
+  new Vocabulary(
+    213,
     "Ho’openo",
     "hovôvo",
     "Sapo",
     "hovôvo",
     require("../assets/images/vocabulary/sapo.jpg"),
-    require("../assets/audios/vocabulary/sapo.mp3")
+    require("../assets/audios/vocabulary/sapo.wav")
   ),
   new Vocabulary(
-    181,
-    "xirípa,xirípoe",
+    214,
     "xirípa",
     "xirípoe",
     "Saracura",
     "xirípoe",
     require("../assets/images/vocabulary/saracura.jpg"),
-    require("../assets/audios/vocabulary/saracura.mp3")
+    require("../assets/audios/vocabulary/saracura.wav")
   ),
   new Vocabulary(
-    182,
-    "Varátutu,vatútu",
+    215,
+    "Singu",
+    "Húndaru",
+    "Sexta-feira, cinco",
+    "Singu",
+    require("../assets/images/vocabulary/sexta.jpg"),
+    require("../assets/audios/vocabulary/sexta.wav")
+  ),
+  new Vocabulary(
+    216,
     "Varátutu",
     "vatútu",
     "Seriema",
     "vatútu",
     require("../assets/images/vocabulary/siriema.jpg"),
-    require("../assets/audios/vocabulary/seriema.mp3")
+    require("../assets/audios/vocabulary/seriema.wav")
   ),
   new Vocabulary(
-    183,
-    "Tôko,tohe",
+    217,
     "Tôko",
     "tohe",
     "Sino",
     "tohe",
     require("../assets/images/vocabulary/sino.jpg"),
-    require("../assets/audios/vocabulary/sino.mp3")
+    require("../assets/audios/vocabulary/sino.wav")
   ),
   new Vocabulary(
-    184,
-    "kîri,káxe",
+    218,
     "kîri",
     "káxe",
     "Sol",
     "káxe",
     require("../assets/images/vocabulary/sol.jpg"),
-    require("../assets/audios/vocabulary/sol.mp3")
+    require("../assets/audios/vocabulary/sol.wav")
   ),
   new Vocabulary(
-    185,
-    "tiuketi,tíkua",
+    219,
+    "Húndaru",
+    "Harará`iti",
+    "Soldado",
+    "Húndaru",
+    require("../assets/images/vocabulary/soldado.jpg"),
+    require("../assets/audios/vocabulary/soldado.wav")
+  ),
+  new Vocabulary(
+    220,
     "tiuketi",
     "tíkua",
     "Tamanduá",
     "tíkua",
     require("../assets/images/vocabulary/tamandua.jpg"),
-    require("../assets/audios/vocabulary/tamandua.mp3")
+    require("../assets/audios/vocabulary/tamandua.wav")
   ),
   new Vocabulary(
-    186,
-    "yúku,yukílu",
+    221,
     "yúku",
     "yukílu",
     "Tartaruga",
     "yukílu",
     require("../assets/images/vocabulary/tartaruga.jpg"),
-    require("../assets/audios/vocabulary/tartaruga.mp3")
+    require("../assets/audios/vocabulary/tartaruga.wav")
   ),
   new Vocabulary(
-    187,
-    "Kopíhe,kopié",
+    222,
     "Kopíhe",
     "kopié",
     "Tatu galinha",
     "kopié",
     require("../assets/images/vocabulary/tatugalinha.jpg"),
-    require("../assets/audios/vocabulary/tatugalinha.mp3")
+    require("../assets/audios/vocabulary/tatugalinha.wav")
   ),
   new Vocabulary(
-    188,
-    "xelêke,xulûki",
+    223,
     "xelêke",
     "xulûki",
     "Tatu",
     "xulûki",
     require("../assets/images/vocabulary/tatu.jpg"),
-    require("../assets/audios/vocabulary/tatu.mp3")
+    require("../assets/audios/vocabulary/tatu.wav")
   ),
   new Vocabulary(
-    189,
-    "Marîpa,mote",
+    224,
+    "Têrenoe",
+    "Inonéti",
+    "Terena",
+    "Têrenoe",
+    require("../assets/images/vocabulary/terena.jpg"),
+    require("../assets/audios/vocabulary/terena.wav")
+  ),
+  new Vocabulary(
+    225,
     "Marîpa",
     "mote",
     "Terra",
     "mote",
     require("../assets/images/vocabulary/terra.jpg"),
-    require("../assets/audios/vocabulary/terra.mp3")
+    require("../assets/audios/vocabulary/terra.wav")
   ),
   new Vocabulary(
-    190,
-    "Yútoe,yutâpa",
+    226,
     "Yútoe",
     "yutâpa",
     "Tesoura",
     "yutâpa",
     require("../assets/images/vocabulary/tesoura.jpg"),
-    require("../assets/audios/vocabulary/tesoura.mp3")
+    require("../assets/audios/vocabulary/tesoura.wav")
   ),
   new Vocabulary(
-    191,
-    "Pikôti,puxârara",
+    227,
+    "Tûru",
+    "Havâva",
+    "Touro",
+    "Tûru",
+    require("../assets/images/vocabulary/touro.jpg"),
+    require("../assets/audios/vocabulary/touro.wav")
+  ),
+  new Vocabulary(
+    228,
     "Pikôti",
     "puxârara",
     "Trovão",
     "puxârara",
     require("../assets/images/vocabulary/trovao.jpg"),
-    require("../assets/audios/vocabulary/trovao.mp3")
+    require("../assets/audios/vocabulary/trovao.wav")
   ),
   new Vocabulary(
-    192,
-    "Hepíko,hepîpi",
+    229,
     "Hepíko",
     "hepîpi",
     "Tucanguira (formiga)",
     "hepîpi",
     require("../assets/images/vocabulary/tocandira.jpg"),
-    require("../assets/audios/vocabulary/tocandira.mp3")
+    require("../assets/audios/vocabulary/tocandira.wav")
   ),
   new Vocabulary(
-    193,
-    "Honoti,honô’e",
+    230,
     "Honoti",
     "honô’e",
     "Tucano",
     "honô’e",
     require("../assets/images/vocabulary/tucano.jpg"),
-    require("../assets/audios/vocabulary/tucano.mp3")
+    require("../assets/audios/vocabulary/tucano.wav")
   ),
   new Vocabulary(
-    194,
-    "kohea,koho",
+    231,
     "kohea",
     "koho",
     "Tuiuiú",
     "koho",
     require("../assets/images/vocabulary/tuiuiu.jpg"),
-    require("../assets/audios/vocabulary/tuiuiu.mp3")
+    require("../assets/audios/vocabulary/tuiuiu.wav")
   ),
   new Vocabulary(
-    195,
-    "Hiyáiti,hîpo",
+    232,
+    "Póhuti",
+    "Iparáti",
+    "Um, uma",
+    "Póhuti",
+    require("../assets/images/vocabulary/um.jpg"),
+    require("../assets/audios/vocabulary/um.wav")
+  ),
+  new Vocabulary(
+    233,
     "Hiyáiti",
     "hîpo",
     "Unha",
     "hîpo",
     require("../assets/images/vocabulary/unha.jpg"),
-    require("../assets/audios/vocabulary/unha.mp3")
+    require("../assets/audios/vocabulary/unha.wav")
   ),
   new Vocabulary(
-    196,
-    "Varâka,varatútu",
+    234,
     "Varâka",
     "varatútu",
     "Urubu",
     "varatútu",
     require("../assets/images/vocabulary/urubu.jpg"),
-    require("../assets/audios/vocabulary/urubu.mp3")
+    require("../assets/audios/vocabulary/urubu.wav")
   ),
   new Vocabulary(
-    197,
-    "Váhere,váka",
+    235,
     "Váhere",
     "váka",
     "Vaca",
     "váka",
     require("../assets/images/vocabulary/vaca.jpg"),
-    require("../assets/audios/vocabulary/vaca.mp3")
+    require("../assets/audios/vocabulary/vaca.wav")
   ),
   new Vocabulary(
-    198,
-    "komítiti,nomíti",
+    236,
     "komítiti",
     "nomíti",
     "Vagalume",
     "nomíti",
     require("../assets/images/vocabulary/vagalume.jpg"),
-    require("../assets/audios/vocabulary/vagalume.mp3")
+    require("../assets/audios/vocabulary/vagalume.wav")
   ),
   new Vocabulary(
-    199,
-    "Kaukapanapu,kauhá’ixopeti",
+    237,
     "Kaukapanapu",
     "kauhá’ixopeti",
     "Vassoura",
     "kauhá’ixopeti",
     require("../assets/images/vocabulary/vassoura.jpg"),
-    require("../assets/audios/vocabulary/vassoura.mp3")
+    require("../assets/audios/vocabulary/vassoura.wav")
   ),
   new Vocabulary(
-    200,
-    "Huléketi,hovenoino",
+    238,
+    "Tîpe",
+    "Têrenoe",
+    "Veado",
+    "Tîpe",
+    require("../assets/images/vocabulary/veado.jpg"),
+    require("../assets/audios/vocabulary/veado.wav")
+  ),
+  new Vocabulary(
+    239,
     "Huléketi",
     "hovenoino",
     "Velha",
     "hovenoino",
     require("../assets/images/vocabulary/velha.jpg"),
-    require("../assets/audios/vocabulary/velha.mp3")
+    require("../assets/audios/vocabulary/velha.wav")
   ),
   new Vocabulary(
-    201,
-    "Yûma,yékoteno",
+    240,
     "Yûma",
     "yékoteno",
     "Velho",
     "yékoteno",
     require("../assets/images/vocabulary/velho.jpg"),
-    require("../assets/audios/vocabulary/velho.mp3")
+    require("../assets/audios/vocabulary/velho.wav")
+  ),
+  new Vocabulary(
+    241,
+    "Harará`iti",
+    "Itukévoketi",
+    "Vermelho(a)",
+    "Harará`iti",
+    require("../assets/images/vocabulary/vermelho.jpg"),
+    require("../assets/audios/vocabulary/vermelho.wav")
   ),
 ];
 
