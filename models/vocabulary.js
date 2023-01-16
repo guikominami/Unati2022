@@ -1,7 +1,6 @@
 class Vocabulary {
   constructor(
     id, 
-    options,
     option1,
     option2,
     optionPt,
@@ -10,7 +9,6 @@ class Vocabulary {
     audio
   ) {
     this.id = id,
-    this.options = options,
     this.option1 = option1,
     this.option2 = option2,
     this.optionPt = optionPt,
