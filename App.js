@@ -8,17 +8,21 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AppLoading from "expo-app-loading";
 
 import PrimaryScreen from "./screens/PrimaryScreen";
+import VocabularyMenuScreen from "./screens/VocabularyMenuScreen";
 import VocabularyLearnScreen from "./screens/VocabularyLearnScreen";
 import VocabularyListScreen from "./screens/VocabularyListScreen";
+import PhraseMenuScreen from "./screens/PhraseMenuScreen";
+import AboutScreen from "./screens/AboutScreen";
 import LoginScreen from "./screens/LoginScreen";
 import AuthContentProvider, { AuthContext } from './store/auth-context';
 import Colors from "./constants/colors";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import IconButton from './components/UI/IconButton';
+import MenuLoader from './components/UI/MenuLoader';
 
 const Stack = createNativeStackNavigator();
 
-function AuthStack() {
+const AuthStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -36,7 +40,7 @@ function AuthStack() {
   );
 }
 
-function AuthenticatedStack() {
+const AuthenticatedStack = () => {
   const authCtx = useContext(AuthContext);
 
   return (
@@ -51,7 +55,7 @@ function AuthenticatedStack() {
         name="PrimaryScreen"
         component={PrimaryScreen}
         options={{ 
-          title: "Unati",
+          title: "",
           headerRight: ({tintColor}) => 
           <IconButton 
             icon="exit" 
@@ -62,20 +66,40 @@ function AuthenticatedStack() {
         }}
       />
       <Stack.Screen
+        name="VocabularyMenuScreen"
+        component={VocabularyMenuScreen}
+        options={{ title: "Desafios de Vocabulário" }}
+      />
+      <Stack.Screen
+        name="PhraseMenuScreen"
+        component={PhraseMenuScreen}
+        options={{ title: "Desafios de Frases" }}
+      />
+      <Stack.Screen
+        name="AboutScreen"
+        component={AboutScreen}
+        options={{ title: "" }}
+      />            
+      <Stack.Screen
         name="VocabularyLearnScreen"
         component={VocabularyLearnScreen}
         options={{ title: "Vocabulário" }}
-      />
+      />      
       <Stack.Screen
         name="VocabularyListScreen"
         component={VocabularyListScreen}
         options={{ title: "Lista de Vocabulário" }}
       />
+      <Stack.Screen
+        name="MenuLoader"
+        component={MenuLoader}
+        options={{ title: "Menu" }}
+      />      
     </Stack.Navigator>
   );
 }
 
-function Navigation() {
+const Navigation = () => {
   const authCtx = useContext(AuthContext);
 
   return (
@@ -93,8 +117,8 @@ function Navigation() {
   );
 }
 
+const Root = () => {
 
-function Root(){
   const [isTryingLogin, setIsTryingLogin] = useState(true);
   const authCtx = useContext(AuthContext);
 
@@ -120,6 +144,7 @@ function Root(){
 }
 
 export default function App() {
+
   const [fontsLoaded] = useFonts({
     "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
     "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),

@@ -1,44 +1,45 @@
-import { FlatList, StyleSheet, View, ImageBackground } from 'react-native';
+import { StyleSheet, View } from "react-native";
 
-import { CATEGORIES } from '../data/data';
+import { MAIN_MENU } from "../data/data";
 
-import CategoryGridTile from '../components/UI/CategoryGridTile';
+import MenuLoader from "../components/UI/MenuLoader";
+import Title from "../components/UI/Title";
 
-function PrimaryScreen({ navigation }){
-  function renderCategoryItem(itemData){    
-    function pressHandler(){
-      navigation.navigate(itemData.item.page, {
-        wordId: '', 
-        dataType: itemData.item.type
-      });
-    }
-    
-    return (
-      <CategoryGridTile 
-        title={itemData.item.title} 
-        onPress={pressHandler}
-      />
-    );
-  }
-  
+const PrimaryScreen = ({ navigation }) => {
+  const pressMenuItemHandler = (page) => {
+    navigation.navigate(page);
+  };
+
   return (
     <View style={styles.rootContainer}>
-      <FlatList 
-        data={CATEGORIES} 
-        keyExtractor={(item, index) => item.id} 
-        renderItem={renderCategoryItem}
-        numColumns={2}      
-      />
+      <View style={styles.titleContainer}>
+        <Title>UNATI</Title>
+      </View>
+
+      <View style={styles.buttonsContainer}>
+        <MenuLoader
+          menuData={MAIN_MENU}
+          onPress={pressMenuItemHandler}
+          numColumns={1}
+          containerStyle={"styles.rootContainer"}
+        />
+      </View>
     </View>
-  );  
-}
+  );
+};
 
 export default PrimaryScreen;
 
 const styles = StyleSheet.create({
   rootContainer: {
-    marginTop: 150,
-    marginHorizontal: 15,
-    marginVertical: 15
+    marginTop: 40,
+  },
+  buttonsContainer: {
+    marginTop: 20,
+    marginHorizontal: 35,
+    marginVertical: 15,
+  },
+  titleContainer: {
+    marginHorizontal: 20,
   },
 });

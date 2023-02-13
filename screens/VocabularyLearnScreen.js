@@ -10,26 +10,17 @@ const VocabularyLearnScreen = ({ route }) => {
   var initialWordId = 1;
 
   var data;
-  var type;
+  var type = route.params.dataType;
 
-  if(route.params.dataType === "Vocabulary"){
+  if(type === "Vocabulary"){
     data = VOCABULARY;
-    type = "Vocabulary";
   }
   else{
     data = PHRASES;
-    type = "Phrase";
   }  
 
-  //console.log(route.params.dataType);
-
-  if (route.params.wordId !== "") {
-    initialWordId = route.params.wordId;
-  } else if (type === "Vocabulary") {
-    initialWordId = generateWordId();
-  }
-
-  function generateWordId() {
+  //PARA USAR SE FOR SORTEAR A PALAVRA
+  const generateWordId = () => {
     //sorteia a próxima pergunta entre os dados
     const rndWordId = Math.floor(Math.random() * (data.length - 1) + 1);
     //console.log(rndWordId);
@@ -45,7 +36,8 @@ const VocabularyLearnScreen = ({ route }) => {
   var optionWord1 = selectedWord.option1;
   var optionWord2 = selectedWord.option2;
 
-  function optionSelectedHandler() {
+  //ANTIGAMENTE ERA SORTEADA SE FOSSE PALAVRA
+  const optionRandomSelectedHandler = () => {
 
     if (type === "Vocabulary"){
       //se for palavras, sortear
@@ -61,6 +53,14 @@ const VocabularyLearnScreen = ({ route }) => {
       }
     }
   }
+
+  const optionSelectedHandler = () => {
+    if (currentWordId === data.length) {
+      setCurrentWord(1);
+    } else {
+      setCurrentWord(currentWordId + 1);
+    }
+  };  
 
   generateRandom();
 
@@ -84,6 +84,7 @@ const VocabularyLearnScreen = ({ route }) => {
           audio={selectedWord.audio}
           image={selectedWord.image}
           type={type}
+          quizType={route.params.quizType}
         />
       </View>
     );

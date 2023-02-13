@@ -10,6 +10,8 @@ function Title({children}){
 
 export default Title;
 
+//passar parametro do estilo do alinhamento e da fonte
+
 const styles = StyleSheet.create({
   title: {
     fontFamily: 'open-sans-bold',

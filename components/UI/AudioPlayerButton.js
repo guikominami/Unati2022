@@ -1,49 +1,50 @@
-import * as React from 'react';
-import { useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import * as React from "react";
+import { useState, useEffect } from "react";
+import { View, StyleSheet } from "react-native";
 import { Entypo } from "@expo/vector-icons";
-import Colors from '../../constants/colors';
-import { Audio } from 'expo-av';
+import Colors from "../../constants/colors";
+import { Audio } from "expo-av";
 
-function AudioPlayerButton({ audio }){
+const AudioPlayerButton = ({ audio, isAudio }) => {
+  if (isAudio) {
+    const [sound, setSound] = React.useState();
 
-  const [sound, setSound] = React.useState();
+    /*   var audioIsPlayed = false;
+    
+      console.log(audioIsPlayed);
+      if(!audioIsPlayed){
+        playSound();
+        audioIsPlayed = true;          
+      } */
 
-/*   var audioIsPlayed = false;
+    async function playSound() {
+      const { sound } = await Audio.Sound.createAsync(audio);
 
-  console.log(audioIsPlayed);
-  if(!audioIsPlayed){
-    playSound();
-    audioIsPlayed = true;          
-  } */
+      setSound(sound);
 
-  async function playSound() {
-    const { sound } = await Audio.Sound.createAsync(audio);
+      await sound.playAsync();
+    }
 
-    setSound(sound);
+    React.useEffect(() => {
+      return sound
+        ? () => {
+            sound.unloadAsync();
+          }
+        : undefined;
+    }, [sound]);
 
-    await sound.playAsync();
+    return (
+      <View style={styles.iconContainer}>
+        <Entypo
+          android_ripple={{ color: "#cccccc" }}
+          name="sound"
+          size={32}
+          color={Colors.primary600}
+          onPress={playSound}
+        />
+      </View>
+    );
   }
-
-  React.useEffect(() => {
-    return sound
-      ? () => {
-          sound.unloadAsync();
-        }
-      : undefined;      
-  }, [sound]);
-
-  return(
-    <View style={styles.iconContainer}>
-      <Entypo 
-        android_ripple={{color: '#cccccc'}}                    
-        name="sound" 
-        size={32} 
-        color={Colors.primary600}
-        onPress={playSound} 
-      />
-    </View>    
-  );
 }
 
 export default AudioPlayerButton;
@@ -53,4 +54,4 @@ const styles = StyleSheet.create({
     marginTop: 10,
     alignSelf: "flex-end",
   },
-})
+});

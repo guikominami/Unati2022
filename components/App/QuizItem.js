@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
+import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { Alert } from "react-native";
 
 import Title from "../UI/Title";
@@ -8,8 +8,9 @@ import PhraseButton from "../../components/UI/PhraseButton";
 import Colors from "../../constants/colors";
 import Card from "../../components/UI/Card";
 import AudioPlayerButton from "../../components/UI/AudioPlayerButton";
+import ImageArea from "../../components/UI/ImageArea";
 
-function QuizItem({
+const QuizItem = ({
   wordPt,
   option1,
   option2,
@@ -17,21 +18,31 @@ function QuizItem({
   onOptionCorrectSelected,
   audio,
   image,
-  type
-}) {
+  type,
+  quizType,
+}) => {
+
+  var title;
+  var isAudio = true;
+  var hasImage = true;
+
   const [currentOption, setCurrentOption] = useState();
 
   useEffect(() => {
     if (
-      (currentOption !== undefined && currentOption === 1 && option1 === optionCorrect) ||
-      (currentOption !== undefined && currentOption === 2 && option2 === optionCorrect)
+      (currentOption !== undefined &&
+        currentOption === 1 &&
+        option1 === optionCorrect) ||
+      (currentOption !== undefined &&
+        currentOption === 2 &&
+        option2 === optionCorrect)
     ) {
       onOptionCorrectSelected();
-    } else if (currentOption != undefined){
+    } else if (currentOption != undefined) {
       Alert.alert("Resposta errada", "Tente novamente!", [
         { text: "OK", style: "cancel" },
       ]);
-    } 
+    }
     setCurrentOption();
   }, [currentOption, onOptionCorrectSelected]);
 
@@ -39,12 +50,26 @@ function QuizItem({
     setCurrentOption(optionSelected);
   }
 
-  if (type == "Vocabulary"){
+  if (type == "Vocabulary") {
+    if (quizType === 1) {
+      title = "Desafio 1: Que palavra é essa?";
+    } else if (quizType === 2) {
+      title = "Desafio 2: Olhe o desenho e escolha a palavra correta.";
+      isAudio = false;
+    } else if (quizType === 3) {
+      title = "Desafio 3: Ouça o áudio e escolha a palavra correta.";
+      hasImage = false;
+    }
+
+    console.log(image);
+
     return (
       <View style={styles.rootContainer}>
-        <Title>Que palavra é essa?</Title>
-        <View style={styles.imageContainer}>
-          <Image source={image} style={styles.image} />
+        <View style={styles.titleContainer}>
+          <Title>{title}</Title>
+        </View>
+        <View>
+          <ImageArea imageFile={image} hasImage={hasImage} />
         </View>
         <Card>
           <View>
@@ -64,15 +89,22 @@ function QuizItem({
               />
             </View>
           </View>
-          <AudioPlayerButton audio={audio} />
+          <AudioPlayerButton audio={audio} isAudio={isAudio}/>
         </Card>
       </View>
     );
-  }
-  else{
+  } else {
+
+    if (quizType === 1) {
+      title = "Desafio 1: Que frase é essa?";
+    } else if (quizType === 2) {
+      title = "Desafio 2: Que frase é essa?";
+      isAudio = false;
+    }
+
     return (
       <View style={styles_phrase.rootContainer}>
-        <Title>Que frase é essa?</Title>
+        <Title>{title}</Title>
         <Card>
           <View style={styles_phrase.titleContainer}>
             <Text style={styles_phrase.title}>{wordPt}</Text>
@@ -82,7 +114,7 @@ function QuizItem({
               <PhraseButton
                 word={option1}
                 onPress={nextGuessHandler.bind("this", 1)}
-              />          
+              />
             </View>
             <View>
               <PhraseButton
@@ -94,19 +126,21 @@ function QuizItem({
           <AudioPlayerButton audio={audio} />
         </Card>
       </View>
-    );    
+    );
   }
-
-}
+};
 
 export default QuizItem;
 
-const deviceWidth = Dimensions.get('window').width;
+const deviceWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   rootContainer: {
     flex: 1,
-    marginTop: 20,
+    marginTop: 10,
+  },
+  titleContainer: {
+    textAlign: "left",
   },
   title: {
     fontSize: 34,
@@ -120,30 +154,20 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
-  },
-  imageContainer: {
-    marginTop: 10,
-    marginHorizontal: 24,
-    borderWidth: 4,
-    borderColor: Colors.primary500,
-  },
-  image: {
-    width: "100%",
-    height: 250,
-  },
+  }
 });
 
 const styles_phrase = StyleSheet.create({
   rootContainer: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: "column",
     marginTop: deviceWidth < 380 ? 10 : 20,
   },
-  titleContainer:{
+  titleContainer: {
     paddingHorizontal: 5,
-    alignSelf: 'center',
+    alignSelf: "center",
   },
-  buttonsContainer:{
+  buttonsContainer: {
     flexDirection: "column",
   },
   title: {
@@ -151,5 +175,5 @@ const styles_phrase = StyleSheet.create({
     color: Colors.primary600,
     fontFamily: "open-sans-bold",
     marginBottom: 20,
-  },
+  }
 });
