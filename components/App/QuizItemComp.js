@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   title: (isVocabulary) => {
     if (isVocabulary){
       return{
-        fontSize: 34,
+        fontSize: 30,
         textAlign: "center",
         color: Colors.primary600,
         fontFamily: "open-sans-bold",

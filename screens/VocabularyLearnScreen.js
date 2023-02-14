@@ -7,15 +7,34 @@ import { VOCABULARY } from "../data/data";
 import { PHRASES } from "../data/data";
 
 const VocabularyLearnScreen = ({ route }) => {
-  var initialWordId = 1;
+  var initialWordId = 0;
 
   var data;
   var type = route.params.dataType;
+  var quizType = route.params.quizType;
+
+  //Filtrar as palavras de acordo com o tipo de menu selecionado em data: MENU_VOCABULARY:
+  //ID: 1 - "Desafio Imagens, Áudio e Texto",
+  //ID: 2 - "Desafio Imagens e Texto",
+  //ID: 3 - "Desafio Áudio e Texto",
 
   if (type === "Vocabulary") {
-    data = VOCABULARY;
+    if (quizType === 1){
+      data = VOCABULARY.filter((item) => item.desafio1 == 1);
+    }  
+    else if (quizType === 2){
+      data = VOCABULARY.filter((item) => item.desafio2 == 1);
+    }
+    else if (quizType === 3){
+      data = VOCABULARY.filter((item) => item.desafio3 == 1);
+    }    
   } else {
-    data = PHRASES;
+    if (quizType === 1){
+      data = PHRASES.filter((item) => item.desafio1 == 1);
+    }  
+    else if (quizType === 2){
+      data = PHRASES.filter((item) => item.desafio2 == 1);
+    }
   }
 
   //PARA USAR SE FOR SORTEAR A PALAVRA
@@ -30,11 +49,13 @@ const VocabularyLearnScreen = ({ route }) => {
   //toda vez que se dá um set, é renderizado novamente o componente
   const [currentWordId, setCurrentWord] = useState(initialWordId);
 
-  const selectedWord = data.find((word) => word.id === currentWordId);
+  //const selectedWord = data.find((word) => word.id === currentWordId);
+
+  const selectedWord = data[currentWordId];
 
   var optionWord1 = selectedWord.option1;
   var optionWord2 = selectedWord.option2;
-
+/* 
   //ANTIGAMENTE ERA SORTEADA SE FOSSE PALAVRA
   const optionRandomSelectedHandler = () => {
     if (type === "Vocabulary") {
@@ -48,11 +69,11 @@ const VocabularyLearnScreen = ({ route }) => {
         setCurrentWord(currentWordId + 1);
       }
     }
-  };
+  }; */
 
   const optionSelectedHandler = () => {
     if (currentWordId === data.length) {
-      setCurrentWord(1);
+      setCurrentWord(0);
     } else {
       setCurrentWord(currentWordId + 1);
     }
