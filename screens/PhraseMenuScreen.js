@@ -17,7 +17,7 @@ const VocabularyMenuScreen = ({ navigation }) => {
   return (
     <View style={styles.rootContainer}>
       <View style={styles.titleContainer}>
-        <Title>FRASES</Title>
+        <Title alignCenter={true}>FRASES</Title>
       </View>
       <View style={styles.buttonsContainer}>
         <MenuLoader

@@ -5,8 +5,8 @@ import { Entypo } from "@expo/vector-icons";
 import Colors from "../../constants/colors";
 import { Audio } from "expo-av";
 
-const AudioPlayerButton = ({ audio, isAudio }) => {
-  if (isAudio) {
+const AudioPlayerButton = ({ audio, hasAudio }) => {
+  if (hasAudio) {
     const [sound, setSound] = React.useState();
 
     /*   var audioIsPlayed = false;

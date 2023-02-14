@@ -2,15 +2,15 @@ import { Pressable, View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../../constants/colors';
 
-function PrimaryButton({ word, onPress }){
+function PrimaryButton({ word, onPress, isVocabulary }){
   return(
-    <View style={styles.buttonOuterContainer}>    
+    <View style={styles.buttonOuterContainer(isVocabulary)}>    
       <Pressable 
         style={styles.buttonInnerContainer} 
         android_ripple={{color: '#cccccc'}}        
         onPress={onPress}>
         <Text 
-          style={styles.buttonText} 
+          style={styles.buttonText(isVocabulary)} 
           adjustsFontSizeToFit numberOfLines={1}
         >
           {word}
@@ -23,14 +23,21 @@ function PrimaryButton({ word, onPress }){
 export default PrimaryButton;
 
 const styles = StyleSheet.create({
-  buttonOuterContainer: {
-    borderRadius: 28,
-    margin: 4,
-    overflow: 'hidden',
-    width: 130,
-    height: 50,
-    alignSelf: 'center',
+
+  buttonOuterContainer: (isVocabulary) => {
+
+    var size = isVocabulary ? 130 : "100%";
+
+    return {
+      borderRadius: 28,
+      margin: 4,
+      overflow: 'hidden',
+      width: size,
+      height: 50,
+      alignSelf: 'center',
+    };
   },
+
   buttonInnerContainer: {
     backgroundColor: Colors.primary600,
     paddingVertical: 8,
@@ -40,10 +47,16 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: 'center',
   },
-  buttonText: {
-    color: Colors.primary800,
-    textAlign: 'center',
-    fontSize: 24,
-    fontFamily: 'open-sans',
+
+  buttonText: (isVocabulary) => {
+    
+    var size = isVocabulary ? 28 : 20;
+
+    return{
+      color: Colors.primary800,
+      textAlign: 'center',
+      fontSize: size,
+      fontFamily: 'open-sans',
+    }
   }
 });

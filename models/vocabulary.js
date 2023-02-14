@@ -6,7 +6,10 @@ class Vocabulary {
     optionPt,
     optionCorrect,
     image,
-    audio
+    audio,
+    desafio1,
+    desafio2,
+    desafio3
   ) {
     this.id = id,
     this.option1 = option1,
@@ -14,7 +17,10 @@ class Vocabulary {
     this.optionPt = optionPt,
     this.optionCorrect = optionCorrect,
     this.image = image,
-    this.audio = audio
+    this.audio = audio,
+    this.desafio1 = desafio1,
+    this.desafio2 = desafio2,
+    this.desafio3 = desafio3
   }
 }
 

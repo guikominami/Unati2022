@@ -1,28 +1,31 @@
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet } from "react-native";
 
-import Colors from '../../constants/colors';
+import Colors from "../../constants/colors";
 
-function Title({children}){
-  return(
-    <Text style={styles.title}>{children}</Text>    
-  );
+const Title = ({ children, alignCenter }) => {
+  //passando parâmetro para o estilo do alinhamento do título
+  return <Text style={[styles.title, styles.titleAlign(alignCenter)]}>{children}</Text>;
 }
 
 export default Title;
 
-//passar parametro do estilo do alinhamento e da fonte
-
 const styles = StyleSheet.create({
   title: {
-    fontFamily: 'open-sans-bold',
+    fontFamily: "open-sans-bold",
     fontSize: 24,
     color: Colors.white,
-    textAlign: 'center',
-    textAlignVertical: 'center',
+    textAlignVertical: "center",
     borderWidth: 4,
     borderColor: Colors.white,
     padding: 12,
     marginHorizontal: 26,
-    marginBottom: 10
-  }
+    marginBottom: 10,
+  },
+
+  titleAlign: (alignCenter) => {
+    const align = alignCenter ?  "center" : "left";
+    return {
+      textAlign: align,
+    };
+  },
 });

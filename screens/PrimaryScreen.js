@@ -13,7 +13,7 @@ const PrimaryScreen = ({ navigation }) => {
   return (
     <View style={styles.rootContainer}>
       <View style={styles.titleContainer}>
-        <Title>UNATI</Title>
+        <Title alignCenter={true}>UNATI</Title>
       </View>
 
       <View style={styles.buttonsContainer}>

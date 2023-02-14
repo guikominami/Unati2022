@@ -3,11 +3,10 @@ import { View, Image, StyleSheet } from "react-native";
 import Colors from "../../constants/colors";
 
 const ImageArea = ({ imageFile, hasImage }) => {
-    console.log(imageFile);
   if (hasImage) {
     return (
       <View style={styles.imageContainer}>
-        <Image source={imageFile} style={styles.image} />;
+        <Image source={imageFile} style={styles.image} />
       </View>
     );
   }

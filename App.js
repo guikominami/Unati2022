@@ -83,12 +83,12 @@ const AuthenticatedStack = () => {
       <Stack.Screen
         name="VocabularyLearnScreen"
         component={VocabularyLearnScreen}
-        options={{ title: "Vocabulário" }}
+        options={{ title: "" }}
       />      
       <Stack.Screen
         name="VocabularyListScreen"
         component={VocabularyListScreen}
-        options={{ title: "Lista de Vocabulário" }}
+        options={{ title: "" }}
       />
       <Stack.Screen
         name="MenuLoader"
