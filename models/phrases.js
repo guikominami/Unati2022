@@ -6,7 +6,9 @@ class Phrases {
         option2,
         description,                
         optionCorrect,
-        audio
+        audio,
+        desafio1,
+        desafio2
       ) {
         this.id = id,
         this.optionPt = optionPt,
@@ -14,7 +16,9 @@ class Phrases {
         this.option2 = option2,
         this.description = description,        
         this.optionCorrect = optionCorrect,
-        this.audio = audio
+        this.audio = audio,
+        this.desafio1 = desafio1,
+        this.desafio2 = desafio2
       }
   }
   

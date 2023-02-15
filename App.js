@@ -78,7 +78,7 @@ const AuthenticatedStack = () => {
       <Stack.Screen
         name="AboutScreen"
         component={AboutScreen}
-        options={{ title: "" }}
+        options={{ title: "Ficha Técnica" }}
       />            
       <Stack.Screen
         name="VocabularyLearnScreen"

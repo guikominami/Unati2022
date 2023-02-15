@@ -82,11 +82,11 @@ const styles = StyleSheet.create({
   title: (isVocabulary) => {
     if (isVocabulary){
       return{
-        fontSize: 30,
+        fontSize: 27,
         textAlign: "center",
         color: Colors.primary600,
         fontFamily: "open-sans-bold",
-        marginBottom: 20,   
+        marginBottom: 20,
       }
     }else{
       return{
@@ -113,25 +113,4 @@ const styles = StyleSheet.create({
     };
   }
 
-});
-
-const styles_phrase = StyleSheet.create({
-  rootContainer: {
-    flex: 1,
-    flexDirection: "column",
-    marginTop: deviceWidth < 380 ? 10 : 20,
-  },
-  titleContainer: {
-    paddingHorizontal: 5,
-    alignSelf: "center",
-  },
-  buttonsContainer: {
-    flexDirection: "column",
-  },
-  title: {
-    fontSize: 20,
-    color: Colors.primary600,
-    fontFamily: "open-sans-bold",
-    marginBottom: 20,
-  },
-});
+})

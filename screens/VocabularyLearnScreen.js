@@ -72,7 +72,7 @@ const VocabularyLearnScreen = ({ route }) => {
   }; */
 
   const optionSelectedHandler = () => {
-    if (currentWordId === data.length) {
+    if (currentWordId === data.length - 1) {
       setCurrentWord(0);
     } else {
       setCurrentWord(currentWordId + 1);

@@ -10,7 +10,7 @@ const VocabularyMenuScreen = ({ navigation }) => {
     navigation.navigate(page, {
       wordId: '', 
       dataType: type,
-      quizType: quizTypeSelected      
+      quizType: quizTypeSelected    //Esse item vem do ID definido na cateforia e carregado no MenuLoader
     });
   }  
 
