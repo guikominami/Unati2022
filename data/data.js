@@ -9,18 +9,8 @@ export const MAIN_MENU = [
     "VocabularyMenuScreen",
     "Vocabulary"
   ),
-  new Category(
-    2,
-    "Desafio de Frases",
-    "PhraseMenuScreen",
-    "Phrase"
-  ),
-  new Category(
-    3,
-    "Ficha Técnica",
-    "AboutScreen",
-    "Phrase"
-  ),
+  new Category(2, "Desafio de Frases", "PhraseMenuScreen", "Phrase"),
+  new Category(3, "Ficha Técnica", "AboutScreen", "Phrase"),
 ];
 
 export const MENU_VOCABULARY = [
@@ -45,18 +35,8 @@ export const MENU_VOCABULARY = [
 ];
 
 export const MENU_PHRASES = [
-  new Category(
-    1,
-    "Desafio Texto e Áudio",
-    "VocabularyLearnScreen",
-    "Phrase"
-  ),
-  new Category(
-    2,
-    "Desafio Texto",
-    "VocabularyLearnScreen",
-    "Phrase"
-  ),
+  new Category(1, "Desafio Texto e Áudio", "VocabularyLearnScreen", "Phrase"),
+  new Category(2, "Desafio Texto", "VocabularyLearnScreen", "Phrase"),
 ];
 
 export const VOCABULARY = [
@@ -100,7 +80,7 @@ export const VOCABULARY = [
     4,
     "Kâmo",
     "kâme",
-    "Abobora",
+    "Abóbora",
     "kâme",
     require("../assets/images/vocabulary/abobora.jpg"),
     require("../assets/audios/vocabulary/abobora.wav"),
@@ -2584,7 +2564,7 @@ export const VOCABULARY = [
     211,
     "Ukêti",
     "Kuteâti",
-    "Ólho",
+    "Olho",
     "Ukêti",
     require("../assets/images/vocabulary/olho.jpg"),
     require("../assets/audios/vocabulary/olho.wav"),
@@ -3713,7 +3693,7 @@ export const VOCABULARY = [
 export const PHRASES = [
   new Phrase(
     1,
-    "O vestido da moca é bonito.",
+    "O vestido da moça é bonito.",
     "Váhere hîxo ne ârunoe",
     "Uhé’ekoti hîxo ne ârunoe",
     "vestido",
@@ -3746,7 +3726,7 @@ export const PHRASES = [
   ),
   new Phrase(
     4,
-    "Aqui tem caju vermelha e amarelo.",
+    "Aqui tem caju vermelho e amarelo.",
     "úheti ne kâxu",
     "Apé yaye hararáiti yoko hiyáiti kâxu",
     "caju",
