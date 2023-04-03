@@ -1368,7 +1368,7 @@ export const VOCABULARY = [
     "Ndûsia",
     "",
     require("../assets/audios/vocabulary/duzia.wav"),
-    1,
+    0,
     0,
     1
   ),
@@ -1464,7 +1464,7 @@ export const VOCABULARY = [
     "Ihíkaxovoti",
     "",
     require("../assets/audios/vocabulary/estudante.wav"),
-    1,
+    0,
     0,
     1
   ),
@@ -1752,7 +1752,7 @@ export const VOCABULARY = [
     "Njêlu",
     "",
     require("../assets/audios/vocabulary/gelo.wav"),
-    1,
+    0,
     0,
     1
   ),
